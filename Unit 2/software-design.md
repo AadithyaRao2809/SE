@@ -77,3 +77,7 @@ failures
 - React to user input effectively and efficiently
 • Data persistence
 - Storage of information between execution
+
+
+### Differences between architecture and design
+![[Pasted image 20230921204252.png]]
