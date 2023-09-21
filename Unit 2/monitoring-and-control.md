@@ -40,6 +40,13 @@ Includes availability and propagation - communication including documentation.
 
 
 ### Monitoring & Control Includes
-- collecting measures -> make corrective/preemptive actions
+- collecting measures -> make corrective/preemptive actions(mitigation plan)
 - ensure change control is meticulously followed
+- Updating the scope deliverables and documents
+- Critical Path Analysis (in Gantt Chart)
+- managing teams, performance and communications
 
+
+![[Pasted image 20230921145235.png]]
+
+[[closure|Closure]]
