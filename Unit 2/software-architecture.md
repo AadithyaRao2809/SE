@@ -55,7 +55,7 @@ Ideally, components should have high cohesion low coupling
 ### Architectural View
 View - Something that focuses on explaining one aspect of the product, while not divulging much about the other aspects
 elements -> relationships
-#### Module view
+##### Module view
 has code units. includes classes, functions
 code based, dont represent runtime structure
 useful to know what each part of the code does.
@@ -64,20 +64,20 @@ useful to know what each part of the code does.
 ![[Pasted image 20230921184510.png]]
 
 
-#### Component and Connector View
+##### Component and Connector View
 - runtime entities called components.
 - Objects (not classes), a collection of objects, and a process are
 - examples of components.
 - While executing, components need to interact with others to support the
 - system services. Connectors provide means for this interaction
 
-#### Allocation View
+##### Allocation View
 - Deciding on hardware, file-system and people
 - Deployment structure: software assigned to hardware and communication paths
 - How software is mapped onto file structures in systems development
 - Work assignment structure - Who is doing what and the knowledge needed
 
-#### Krutchen's (4+1 View)
+##### Krutchen's (4+1 View)
 Previous views are interrelated. 
 **Shows diffrerent to different entities.**
 - Use case view: exposing requirements or scenarios
@@ -90,3 +90,23 @@ Previous views are interrelated.
 
 ### Architectural Styles
 characterized by the features that make it notable
+1. Vocabulary – A set of design elements.
+2. Design rules – A set of design constraints.
+3. Semantic interpretation - Well-defined meaning of the connected design elements.
+4. Analysis - Analysis that can be performed on systems built in that style.
+
+### Architectural Pattern
+- general, reusable solution to a commonly occurring problem in software architecture within a given context.
+- characterized by the features that make it notable.
+- The main difference is that a pattern can be seen as a solution to a problem, while a style is more general and does not require a problem to solve for its appearance.
+
+![[Pasted image 20230921193934.png]]
+
+### Importance of Styles and Patterns
+- **Benefits reuse** of design and code comps, ease of understanding architecture, increased interop
+- **Represents earliest design decisions**- Hardest to modify ,difficult to get right, comm b/w stakeholders
+- **First design artifact**
+- **Key to systematic reuse**
+
+
+[[software-design|Software Design]]
