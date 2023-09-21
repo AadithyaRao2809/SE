@@ -58,8 +58,9 @@ Views whole structure as a hierarchy
 ### Key Issues
 
 #### Concurrency
-parallel execution of more than one program; deadlocks/race conditions • Event handling: messages sent between objects • Distribution of components
-
+parallel execution of more than one program; deadlocks/race conditions 
+- Event handling: messages sent between objects
+- Distribution of component
 - Distributed apps are supported by middleware
 - Consider communication breakdown
 
@@ -73,9 +74,9 @@ may have system-wide impact • Error, exception handling, fault tolerance
 failures
 
 - Approaches: fault avoidance, fault detection and removal
-• Interaction and presentation
+- Interaction and presentation
 - React to user input effectively and efficiently
-• Data persistence
+- Data persistence
 - Storage of information between execution
 
 
