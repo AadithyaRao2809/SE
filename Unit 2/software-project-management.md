@@ -15,7 +15,7 @@ achive cetain aim, create unique product
 - need for resources
 - Intangible(progress is abstract, cant define progress in metrics)
 #### Steps for Software Project Management
-1. [Planning](#planning)
+1. Planning
 2. Execution
 3. Monitoring
 4. Control
@@ -65,20 +65,6 @@ Complexity of plan depends on nature of project.
 - Ownership
 
 
-#### Stages to Project Planning
+[[stages-to-project-planning|Stages to Project Planning]]
 
-**Understanding expected Deliverables**
-- customer expectations
-- market forces (new tech, competition)
-- high level decisions (make, buy or reuse)
-- Supported by Feasibility study and Requirements elicitation
-
-**Planning the Process**
-- Choice of lifecycle - depends on degree of uncertainty (certainity->legacy)
-- Models, Standards(technical, interoperability, quality, regulatory), guidelines, procedures(config, quality plan, change management)
-
-**Organizing Project**
-- Structure - in terms of people, team, responsibilities (hierarchical, flat, functional, matrix, line org)
-- Partners - downstream(marketing document, manage, support) and upstream(innovation, building and install)
-- 
 
