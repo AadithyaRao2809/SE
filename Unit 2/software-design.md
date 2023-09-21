@@ -81,3 +81,14 @@ failures
 
 ### Differences between architecture and design
 ![[Pasted image 20230921204252.png]]
+
+### Design Methods
+*support in decomposing components, representing
+system requirements as components*
+
+#### Data Flow Design
+ **<u>Two step process</u>**
+- **Structured analysis**: logical design; data flow diagrams
+- **Structured design**: transform logical design into program structure;
+	structure charts
+
