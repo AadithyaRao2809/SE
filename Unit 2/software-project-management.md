@@ -57,7 +57,7 @@ Complexity of plan depends on nature of project.
 - Cost of Solution
 - Delivery plan
 - Quality Metrics
-- Support
+- Support:w
 
 ##### Execution Stakeholder (Development Team)
 - Project Organization
@@ -78,7 +78,7 @@ Complexity of plan depends on nature of project.
 - Models, Standards(technical, interoperability, quality, regulatory), guidelines, procedures(config, quality plan, change management)
 
 **Organizing Project**
-- Structure - in terms of people, team, responsibilities (heirarchical, flat, functional, matrix, line org)
-- Partners
-
+- Structure - in terms of people, team, responsibilities (hierarchical, flat, functional, matrix, line org)
+- Partners - downstream(marketing document, manage, support) and upstream(innovation, building and install)
+- 
 
