@@ -65,8 +65,28 @@ useful to know what each part of the code does.
 
 
 #### Component and Connector View
-runtime entities called components.
-Objects (not classes), a collection of objects, and a process are
-examples of components.
-While executing, components need to interact with others to support the
-system services. Connectors provide means for this interaction
+- runtime entities called components.
+- Objects (not classes), a collection of objects, and a process are
+- examples of components.
+- While executing, components need to interact with others to support the
+- system services. Connectors provide means for this interaction
+
+#### Allocation View
+- Deciding on hardware, file-system and people
+- Deployment structure: software assigned to hardware and communication paths
+- How software is mapped onto file structures in systems development
+- Work assignment structure - Who is doing what and the knowledge needed
+
+#### Krutchen's (4+1 View)
+Previous views are interrelated. 
+**Shows diffrerent to different entities.**
+- Use case view: exposing requirements or scenarios
+- Design view: exposes vocabulary of problem and solution space
+- Process view: dynamic aspects of runtime behaviour
+- Implementation view: realisation of the system; UML diagrams
+- Deployment view: focus on system engineering
+
+![[Pasted image 20230921191121.png]]
+
+### Architectural Styles
+characterized by the features that make it notable
