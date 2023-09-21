@@ -103,7 +103,7 @@ characterized by the features that make it notable
 ![[Pasted image 20230921193934.png]]
 
 ### Importance of Styles and Patterns
-- **Benefits reuse** of design and code comps, ease of understanding architecture, increased interop
+- **Benefits reuse** of design and code comps, ease of understanding architecture, increased interoperability
 - **Represents earliest design decisions**- Hardest to modify ,difficult to get right, comm b/w stakeholders
 - **First design artifact**
 - **Key to systematic reuse**
