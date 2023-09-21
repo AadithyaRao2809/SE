@@ -120,6 +120,7 @@ Derived from dfd,breaks entire system to lowest func modules ,and describes them
 ### Design Patterns
 #### Procedural patterns
 - Analyze problem prior to and during construction
+![[Pasted image 20230921215515.png]]
 #### Object-oriented pattern: Gang of Four solutions
 - Creational patterns that focus on creation of objects (Singleton, builder)
 - Structural patterns that deal with composition (Adapter, Bridge)
@@ -129,7 +130,24 @@ Derived from dfd,breaks entire system to lowest func modules ,and describes them
 - **Intent**: only **one instance of class is created**; global access point to the object
 - **Motivation**: one object to coordinate actions across the system
 - One class responsible to instantiate itself
-- Global point of access to the instance
+- **Global point** of access to the instance
 - Eg: centralized management of global resources
 
-### SOA
+
+### Anti Patterns
+- Describes situations a developer should avoid
+- In agile approaches, refactoring is applied when an anti-pattern is introduced
+
+### Contrasting structural approach vs object oriented approach
+
+
+
+![[Pasted image 20230921215756.png]]
+![[Pasted image 20230921215811.png]]
+
+[[unit-2|Unit 2]]
+
+
+
+
+
