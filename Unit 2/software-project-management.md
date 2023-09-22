@@ -57,7 +57,7 @@ Complexity of plan depends on nature of project.
 - Cost of Solution
 - Delivery plan
 - Quality Metrics
-- Support:w
+- Support
 
 ##### Execution Stakeholder (Development Team)
 - Project Organization

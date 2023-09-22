@@ -12,11 +12,11 @@
 ##### Benefits
 - **Greater Business Agility:** Faster time to market.
 - **Legacy Functionality Leveraging:** Ability to use existing functionality in new markets.
-- **Improved Collaboration:** Enhances cooperation between business and IT.Providing standardized interfaces, clear service contracts, and reusable services.
+- **Improved Collaboration:** Enhances cooperation between business and IT. Providing standardized interfaces, clear service contracts, and reusable services.
 - **Service Reusability:** Encourages the reuse of services.
 
 ##### Service
-- A logical representation of a repeatable business activity with a specified outcome.
+- A logical representation of a **repeatable business activity** with a **specified outcome**
 - Discrete pieces of software, written in any language.
 - Accessed through message exchange, like "callable entities."
 - Offers application functionality with wrappers.
