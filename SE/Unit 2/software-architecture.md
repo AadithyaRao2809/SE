@@ -18,7 +18,7 @@
 Makes high level design choices and tech standards. 
 ![[Pasted image 20230921175650.png]] 
 
-### Architectural Views, Styles and Patters
+### Architectural Views, Styles and Patterns
 **Views** Different Perspectives of stakeholders
 **Styles** how subsystems are organized.
 **Pattern** Observing and including known solutions to **structuring and functioning** of subsystems
