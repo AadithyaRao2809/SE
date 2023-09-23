@@ -5,7 +5,7 @@
 - business and environment change a lot
 
 ## Software project
-achive cetain aim, create unique product
+achieve certain aim, create unique product
 
 #### Characteristics 
 - goal specific
@@ -41,7 +41,7 @@ Feasibility Study to formally start project
 
 
 ### Planning
-- Whats needs to be achieved and how
+- What needs to be achieved and how
 - looking ahead, making provisions
 **Outcome** - Project Plan
 
@@ -57,7 +57,7 @@ Complexity of plan depends on nature of project.
 - Cost of Solution
 - Delivery plan
 - Quality Metrics
-- Support:w
+- Support
 
 ##### Execution Stakeholder (Development Team)
 - Project Organization

@@ -11,7 +11,6 @@ Unexpected event.
 - products
 - projects,
 - organization
-
 #### Steps
 - Identify risk
 - Assessment and Analysis
