@@ -17,5 +17,13 @@
 - physical features of the DB
 - File Organization, Data structures
 
+##### Design Pitfalls
+###### Redundancy
+- Bad design leads to unnecessary repeating of information.
+- may lead to inconsistency
+###### Incompleteness
+- If tuples null values have NULL values, it becomes hard to query them
+- 
 
-[Database-Engine](database-engine.md)
+
+[Database Engine](database-engine.md)
