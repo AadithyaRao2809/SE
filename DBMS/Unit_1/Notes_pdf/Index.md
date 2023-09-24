@@ -9,6 +9,6 @@
 7) [Relational_DB_Structure](Relational_DB_Structure.pdf)
 8) [er](er.pdf)
 9) [types_of_attributes](types_of_attributes.pdf)
-10) [constraints](constraints.pdf)
+10) [cardinality](constraints.pdf)
 11) [er_to_schema](er_to_schema.pdf)
 12) [lab](lab.pdf)
