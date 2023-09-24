@@ -81,7 +81,7 @@ failures
 
 
 ### Differences between architecture and design
-![[Pasted image 20230921204252.png]]
+![[../../Attatchments/software-design-20230924.png]]
 
 ### Design Methods
 *support in decomposing components, representing
@@ -101,7 +101,7 @@ Illustrate the flow of data within a system
 - **lvl 3**:  Most detailed, used by complex systems
 
 ##### Components of a DFD
-![[Pasted image 20230921213107.png]]
+![[../../Attatchments/software-design-20230924-1.png]]
 
 ##### Minispec
 process in DFDs become sufficiently straight forward and
@@ -113,14 +113,14 @@ Logical decomposed state is precise description of structure of data
 
 ##### Structure Chart
 Derived from dfd,breaks entire system to lowest func modules ,and describes them.
-![[Pasted image 20230921213851.png]]
+![[../../Attatchments/software-design-20230924-2.png]]
 
 
 
 ### Design Patterns
 #### Procedural patterns
 - Analyze problem prior to and during construction
-![[Pasted image 20230921215515.png]]
+![[../../Attatchments/software-design-20230924-3.png]]
 #### Object-oriented pattern: Gang of Four solutions
 - Creational patterns that focus on creation of objects (Singleton, builder)
 - Structural patterns that deal with composition (Adapter, Bridge)
@@ -142,8 +142,8 @@ Derived from dfd,breaks entire system to lowest func modules ,and describes them
 
 
 
-![[Pasted image 20230921215756.png]]
-![[Pasted image 20230921215811.png]]
+![[../../Attatchments/software-design-20230924-4.png]]
+![[../../Attatchments/software-design-20230924-5.png]]
 
 [[SE/Unit_2/index|Unit 2]]
 

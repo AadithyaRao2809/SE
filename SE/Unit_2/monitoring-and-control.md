@@ -47,6 +47,6 @@ Includes availability and propagation - communication including documentation.
 - managing teams, performance and communications
 
 
-![[Pasted image 20230921145235.png]]
+![[../../Attatchments/monitoring-and-control-20230924.png]]
 
 [[closure|Closure]]
