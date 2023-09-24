@@ -22,7 +22,7 @@
 ### Entity - Relationship Model
 
 - Uses entities and relationships
-- **Entity** - Thing or object in the real world that is indistinguishable from other objects
+- **Entity** - Thing or object in the real world that is distinguishable from other objects
 - ER model is widely used in database design
 ![](Pasted%20image%2020230923203143.png)
 

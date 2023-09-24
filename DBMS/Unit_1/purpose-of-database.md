@@ -12,7 +12,6 @@
 | Concurrent Access Anomalies                                                 | Transaction for atomicity, Locking to prevent conflicting changes                                      |
 | Security  (Unauthorized access)                                             | Admin can define access controls and permissions.                                                      |
 
-
 ## Characteristics of Database Systems
 
 - **Self Describing** - Database system not only contains DB but also metadata ( DB structure and constraints)
@@ -36,4 +35,4 @@
 - Flexibility to change data structures
 - Availability of current information
 
-**Next section** - [view-of-data](view-of-data.md)
+**Next section** - [View of Data](view-of-data.md)
