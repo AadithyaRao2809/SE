@@ -74,7 +74,7 @@ Three different levels of data abstraction are :-
 
 ### Physical Data Independence
 
-- Refers to property of being able to modify **physical schema** without modifying **logical schema**
+- Refers to property of being able to modify **physical schema** without changing **logical schema**
 - Ex. Changing storage size of database will not affect the logical schema
 - Alteration of indices, modifying data structures used in storage, utilizing storage devices, will not modify logical level
 
