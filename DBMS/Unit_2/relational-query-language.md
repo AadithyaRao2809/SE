@@ -17,3 +17,4 @@ programming paradigm that focuses on describing what a program should compute, r
 programming paradigm that focuses on describing what a program should achieve, rather than how it should achieve it. Declarative programs are typically written as a set of constraints or rules, which the computer can use to reason about the desired solution.
 
 ![](../../Attatchments/relational-query-language-20230924-5.png)
+
