@@ -31,4 +31,4 @@ Most commonly used with the `GROUP BY` command to get the aggregation of categor
 `HAVING` is used to select a group based on a condition. Works the way `WHERE` works on individual records.
 
 
-[[join-expressions|Join Expressions]]
+ [Join Expressions](join-expressions.md)

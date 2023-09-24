@@ -37,4 +37,4 @@ $L(y,\hat{y}) = - [y\ log(\hat{y})\ +\ (1-y)\ log(1-\hat{y})]$
 We need to find $\frac{\partial L}{\partial m}$ and $\frac{\partial L}{\partial b}$ as they are required for gradient descent. 
 
 
-[[k-nearest-neighbours|K Nearest Neighbours]]
+[k-nearest-neighbours](k-nearest-neighbours.md)

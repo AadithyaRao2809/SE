@@ -75,6 +75,5 @@ If there are $n$ classes, with respect to any class, only one cell is True Posit
 
 
 
-[[receiver-operating-class|Receiver Operating Class]]
-
+[receiver-operating-class](receiver-operating-class.md)
 

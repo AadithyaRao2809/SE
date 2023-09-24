@@ -49,4 +49,4 @@ Functions that perform operations on a set and return a single value
 - SUM 
 - COUNT 
 
-[[sql-commands|SQL Commands]]
+[SQL Commands](sql-commands.md)

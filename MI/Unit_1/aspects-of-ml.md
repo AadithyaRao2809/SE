@@ -20,4 +20,4 @@ No of concepts = $4*4*4*4 ... *4 =$         $4^n$
 But all rejection cases are the same so we can combine them to make once concept.
 So semantically it is $3*3*3* ... *3 +1 =$     **$3^n+1$** 
 
-[[find-s|Find S]]
+[Find S](find-s.md)

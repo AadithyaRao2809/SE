@@ -47,5 +47,4 @@ When there is a need to include large objects like documents or other file types
 View Commands are used to create a virtual table. We select a part of our DB table to be  the view
 `CRETE VIEW <view_name> AS <query>` where `<query>` is any valid SQL query.:
 
-[[dml-commands|DML Commands]]
-
+[dml-commands](dml-commands.md)

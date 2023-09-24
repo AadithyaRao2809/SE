@@ -8,5 +8,4 @@ By connecting all the points for FPR-TPR graph, we get the **ROC** curve. The ar
 
 This can be used to identify the better model, as that model will have a higher AUC. An ideal model will have its AUC as 1. 
 
-
-[[id3-algorithm| ID3 Algorithm]]
+[id3-algorithm](id3-algorithm.md)
