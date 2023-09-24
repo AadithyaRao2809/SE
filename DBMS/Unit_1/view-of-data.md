@@ -16,7 +16,7 @@
 - **Columns** correspond to attributes
 - Most widely used data model
 
-![](Pasted%20image%2020230923194933.png)
+![](../../Attatchments/view-of-data-20230924-4.png)
 
 
 ### Entity - Relationship Model
@@ -24,7 +24,7 @@
 - Uses entities and relationships
 - **Entity** - Thing or object in the real world that is distinguishable from other objects
 - ER model is widely used in database design
-![](Pasted%20image%2020230923203143.png)
+![](../../Attatchments/view-of-data-20230924-5.png)
 
 ### Semi - Structured Data Model
 
@@ -32,14 +32,14 @@
 - JSON and XML widely used
 - No separation between data and schema
 - Can represent information of some data sources that cannot be constrained by schema
-![[../../Pasted image 20230924113004.png]]
+![[../../view-of-data-20230924.png]]
 ### Object - Based Data Model
 
 - Dominant software development methodology
 - Can store objects in relational tables
 - Can be seen as extending the relational model with notions of encapsulation, methods and object identity
 
-![[../../Pasted image 20230924113037.png]]
+![[../../view-of-data-20230924-1.png]]
 ## <u>Levels of Data Abstraction</u>
 
 - Common man cannot understand complex data structures, need arises for hiding the complexity
