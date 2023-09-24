@@ -4,7 +4,7 @@
 - So every epoch, w, b updates once.
 - batch is faster running
 - smooth curve, as it is averaging->asking every point
- ![](Pasted%20image%2020230923222055.png)
+ ![](../../Attatchments/gradient_des-20230924.png)
  - cant vectorize large batches of data, would not fit in memory
 
 ### Stochastic

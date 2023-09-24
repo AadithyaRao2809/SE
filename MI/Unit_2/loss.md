@@ -3,7 +3,7 @@
 > *You can't improve what you cant measure
 > <cite>-Peter Drucker</cite>
 
-![](Pasted%20image%2020230923111039.png)
+![](../../Attatchments/loss-20230924-4.png)
 
 
 We call it **loss/error function** with a **single** training example.
@@ -37,8 +37,8 @@ Can't do normal gradient descent, need to work with subgradients
 
 $log\;loss=-y\log{(\hat{y})}-(1-y)\log{(1-\hat{y})}$
 
-![](Pasted%20image%2020230923115104.png)
-![](Pasted%20image%2020230923115125.png)
+![](../../Attatchments/loss-20230924.png)
+![](../../Attatchments/loss-20230924-5.png)
 
 ### Categorical Cross Entropy
 
@@ -49,7 +49,7 @@ SoftMax activation used
 ### Sparse Categorical Cross Entropy
 
 Multiclass outputs can be not one hot, so useful for many categories(classes)
-![](Pasted%20image%2020230923154143.png)
+![](../../Attatchments/loss-20230924-6.png)
 while calculating loss just take the log term that corresponds with output
 
 [index](MI/Unit_2/index.md)
