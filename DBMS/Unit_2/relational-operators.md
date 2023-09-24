@@ -4,7 +4,7 @@ It is a representation of a database query in algebraic form.
 ## **Unary Operators**
 ### Selection ($\sigma$)
 Return rows of the table that match the condition given.
-Eg. $\sigma_{\geq 85000}(instructors)$ returns a table with the rows where instructors have a salary of above 85,00.
+Eg. $\sigma_{\geq 85000}(instructors)$ returns a table with the rows where instructors have a salary of above 85,000.
 
 ### Projection ($\Pi$)
 Outputs the specified columns of a table
@@ -19,7 +19,7 @@ Assigns the result of a relational algebra to a variable.
 Eg. Physics $\leftarrow$ $\sigma_{dep\_name='physics'}(Instructor)$
 
 
-## **Binary Opaerators**
+## **Binary Operators**
 
 ### Cartesian Product($\times$)
 Creates a new entry for every combination of the entries in the two tables.
