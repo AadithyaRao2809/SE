@@ -1,4 +1,3 @@
-
 # Regression
 
 Statistical method to understand the relationship between independent variables **(x)**

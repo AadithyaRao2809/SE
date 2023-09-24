@@ -1,4 +1,3 @@
-
 # Decision Boundaries
 
 When there are many attributes, we can represent a data point as a point in n-dimensional space, where there are n attributes. When there is a need to classify data into clusters, we need to define boundaries in this space. 

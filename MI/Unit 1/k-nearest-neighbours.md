@@ -1,5 +1,3 @@
-
-
 # K - Nearest Neighbours
 
 It is an example of lazy learning, where the processing is postponed until a new data point arrives and must be classified. 

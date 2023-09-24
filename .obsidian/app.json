@@ -3,5 +3,6 @@
   "attachmentFolderPath": "Attatchments",
   "showLineNumber": false,
   "alwaysUpdateLinks": true,
-  "showInlineTitle": false
+  "showInlineTitle": false,
+  "useMarkdownLinks": true
 }

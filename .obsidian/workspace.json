@@ -13,9 +13,9 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MI/Unit 1/k-nearest-neighbours.md",
+                "file": "MI/machine-intelligence.md",
                 "mode": "source",
-                "source": true
+                "source": false
               }
             }
           }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "MI/Unit 1/k-nearest-neighbours.md",
+                "file": "MI/machine-intelligence.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "MI/Unit 1/k-nearest-neighbours.md",
+                "file": "MI/machine-intelligence.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "MI/Unit 1/k-nearest-neighbours.md"
+                "file": "MI/machine-intelligence.md"
               }
             }
           }
@@ -150,20 +150,34 @@
   },
   "active": "a7c7f6c42bb23e03",
   "lastOpenFiles": [
-    "MI/Unit 1/regression.md",
-    "MI/Unit 1/k-nearest-neighbours.md",
-    "MI/Unit 1/decision-boundaries.md",
-    "MI/Unit 1/id3-algorithm.md",
     "MI/Unit 1/unit-1.md",
+    "MI/Unit 1/k-nearest-neighbours.md",
+    "MI/Unit 1/regression.md",
+    "Attatchments/Pasted image 20230923222055.png",
+    "Attatchments/Pasted image 20230923215252.png",
+    "Attatchments/Pasted image 20230923181128.png",
+    "Attatchments/Pasted image 20230923170716.png",
+    "Attatchments/Pasted image 20230923170631.png",
+    "Attatchments/Pasted image 20230923170610.png",
+    "Attatchments/Pasted image 20230923165911.png",
+    "Attatchments/Pasted image 20230923165808.png",
+    "Attatchments/Pasted image 20230923165658.png",
+    "Attatchments/Pasted image 20230923161937.png",
+    "Attatchments",
+    "Attachments",
+    "MI/Unit 1/receiver-operating-class.md",
+    "MI/Unit 1/intro.md",
+    "MI/Unit 1/id3-algorithm.md",
+    "MI/Unit 1/find-s.md",
+    "MI/Unit 1/decision-boundaries.md",
+    "MI/Unit 1/aspects-of-ml.md",
+    "SE/Unit 2/monitoring-and-control.md",
+    "decision-bondaries.md",
     "MI/machine-intelligence.md",
     "Sem_5/MI/Unit 1/unit-1.md",
     "Sem_5/MI/Unit 1",
     "Sem_5/MI",
     "Sem_5",
-    "MI/Unit 1/receiver-operating-class.md",
-    "MI/Unit 1/intro.md",
-    "MI/Unit 1/find-s.md",
-    "MI/Unit 1/aspects-of-ml.md",
     "Machine-Learning-TB.pdf.md",
     "MI/Unit 2/unit-2.md",
     "MI/Unit 2/perceptron-learning-algorithm.md",
@@ -180,21 +194,6 @@
     "conflict-files-obsidian-git.md",
     "SE/Unit 1/Unit 1,4.pdf",
     "SE/Unit 1/Unit 1,3.pdf",
-    "SE/Unit 1/Unit 1,2.pdf",
-    "SE/Unit 1/Unit 1,1.pdf",
-    "SE/Unit 2/soa.md",
-    "SE/Attatchments/Pasted image 20230921215811.png",
-    "SE/Attatchments/Pasted image 20230921215756.png",
-    "SE/Attatchments/Pasted image 20230921215515.png",
-    "SE/Attatchments/Pasted image 20230921213851.png",
-    "SE/Attatchments/Pasted image 20230921213107.png",
-    "SE/Attatchments/Pasted image 20230921213031.png",
-    "Unit 2/software-architecture.md",
-    "Unit 2/unit-2.md",
-    "Unit 2/software-project-management.md",
-    "Attatchments/Pasted image 20230921204252.png",
-    "Attatchments/Pasted image 20230921193934.png",
-    "Pasted image 20230921193934.png",
-    "Attatchments/Pasted image 20230921191459.png"
+    "SE/Unit 2/soa.md"
   ]
 }

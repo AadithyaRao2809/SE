@@ -1,4 +1,3 @@
-
 # Aspects of ML
 
 **Concept:** Representation of real or theoretical object.

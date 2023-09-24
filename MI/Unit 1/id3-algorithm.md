@@ -56,4 +56,4 @@ Removing the lower levels of the decision which is believed to resemble the inac
 ### Dealing with Continuous Data
 If the attributes are continuous values, taking each value is not an option. So the decisions that need to be taken will be with respect to threshold values. 
 
-
+[Decision Boundaries](decision-boundaries)

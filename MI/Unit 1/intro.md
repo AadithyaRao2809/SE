@@ -1,4 +1,3 @@
-
 # Introduction
 
 <b><u>Artificial intelligence:</u></b> A computer program that emulates human behaviour.
