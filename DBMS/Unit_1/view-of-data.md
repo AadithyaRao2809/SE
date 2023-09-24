@@ -32,14 +32,14 @@
 - JSON and XML widely used
 - No separation between data and schema
 - Can represent information of some data sources that cannot be constrained by schema
-
+![[../../Pasted image 20230924113004.png]]
 ### Object - Based Data Model
 
 - Dominant software development methodology
 - Can store objects in relational tables
 - Can be seen as extending the relational model with notions of encapsulation, methods and object identity
 
-
+![[../../Pasted image 20230924113037.png]]
 ## <u>Levels of Data Abstraction</u>
 
 - Common man cannot understand complex data structures, need arises for hiding the complexity
