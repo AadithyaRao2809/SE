@@ -145,7 +145,7 @@ Derived from dfd,breaks entire system to lowest func modules ,and describes them
 ![[Pasted image 20230921215756.png]]
 ![[Pasted image 20230921215811.png]]
 
-[[unit-2|Unit 2]]
+[[SE/Unit 2/unit-2|Unit 2]]
 
 
 

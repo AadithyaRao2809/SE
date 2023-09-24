@@ -35,4 +35,4 @@
 - **Service Broker/Registry:** Provides information about available services.
 - **Service Requester/Consumer:** Discovers services in the broker and connects to the provider.
 
-[[unit-2|Unit 2]]
+[[SE/Unit 2/unit-2|Unit 2]]
