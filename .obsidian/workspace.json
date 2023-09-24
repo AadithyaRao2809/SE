@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "9f0826606155fc68",
+        "id": "5984d26d9fba589f",
         "type": "tabs",
         "children": [
           {
-            "id": "bb762744d845a464",
+            "id": "a7c7f6c42bb23e03",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "MI/Unit 1/k-nearest-neighbours.md",
+                "mode": "source",
+                "source": true
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "MI/Unit 1/k-nearest-neighbours.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "MI/Unit 1/k-nearest-neighbours.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "MI/Unit 1/k-nearest-neighbours.md"
+              }
             }
           }
         ]
@@ -140,14 +148,40 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "07f5910e946eea7c",
+  "active": "a7c7f6c42bb23e03",
   "lastOpenFiles": [
+    "MI/Unit 1/regression.md",
+    "MI/Unit 1/k-nearest-neighbours.md",
+    "MI/Unit 1/decision-boundaries.md",
+    "MI/Unit 1/id3-algorithm.md",
+    "MI/Unit 1/unit-1.md",
+    "MI/machine-intelligence.md",
+    "Sem_5/MI/Unit 1/unit-1.md",
+    "Sem_5/MI/Unit 1",
+    "Sem_5/MI",
+    "Sem_5",
+    "MI/Unit 1/receiver-operating-class.md",
+    "MI/Unit 1/intro.md",
+    "MI/Unit 1/find-s.md",
+    "MI/Unit 1/aspects-of-ml.md",
+    "Machine-Learning-TB.pdf.md",
+    "MI/Unit 2/unit-2.md",
+    "MI/Unit 2/perceptron-learning-algorithm.md",
+    "MI/Unit 2/optimizers.md",
+    "MI/Unit 2/gradient-descent.md",
+    "MI/Unit 2/deep-learning.md",
+    "MI/Unit 2/activation-functions.md",
+    "MI/Unit 2/backward-propagation.md",
+    "MI/Unit 2/ann.md",
+    "MI/Unit 2",
+    "MI/Unit 1",
+    "MI",
+    "ML Models.md",
     "conflict-files-obsidian-git.md",
     "SE/Unit 1/Unit 1,4.pdf",
     "SE/Unit 1/Unit 1,3.pdf",
     "SE/Unit 1/Unit 1,2.pdf",
     "SE/Unit 1/Unit 1,1.pdf",
-    "SE/Unit 1",
     "SE/Unit 2/soa.md",
     "SE/Attatchments/Pasted image 20230921215811.png",
     "SE/Attatchments/Pasted image 20230921215756.png",
@@ -158,18 +192,9 @@
     "Unit 2/software-architecture.md",
     "Unit 2/unit-2.md",
     "Unit 2/software-project-management.md",
-    "Unit 2/stages-to-project-planning.md",
-    "Unit 2/closure.md",
-    "Unit 2/monitoring-and-control.md",
-    "Unit 2/project-tracking.md",
-    "Unit 2/quality-managemt.md",
-    "Unit 2/risk-management.md",
-    "Unit 2/software-design.md",
     "Attatchments/Pasted image 20230921204252.png",
     "Attatchments/Pasted image 20230921193934.png",
     "Pasted image 20230921193934.png",
-    "Attatchments/Pasted image 20230921191459.png",
-    "srchitcutral-views.md",
-    "Attatchments"
+    "Attatchments/Pasted image 20230921191459.png"
   ]
 }
