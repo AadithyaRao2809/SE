@@ -31,7 +31,7 @@
 - **Data Analytics** - Processing data to create predictions and draw conclusions
 
 
- [Purpose of Database](purpose-of-databse.md)
+ [Purpose of Database](purpose-of-database.md)
 
 
 

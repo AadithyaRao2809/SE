@@ -59,7 +59,7 @@ Sequential - dependency management
 
 ### Graphic tools
 Gantt chart - time estimate, calenderisation
-![[Pasted image 20230921120550.png]]
+![Pasted image 20230921120550.png](Pasted%20image%2020230921120550.png)
 
 ### Scheduling risk
 Identify scheduling risk 

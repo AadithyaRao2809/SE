@@ -2,4 +2,3 @@
 - [[relational-operators|Relational Operators]]
 - [[sql-commands|SQL Commands]]
 - [[dml-commands|DML Commands]]
-k

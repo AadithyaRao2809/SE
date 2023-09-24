@@ -87,7 +87,6 @@ Previous views are interrelated.
 - Deployment view: focus on system engineering
 
 ![[Pasted image 20230921191121.png]]
-
 ### Architectural Styles
 characterized by the features that make it notable
 1. Vocabulary – A set of design elements.
