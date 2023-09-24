@@ -34,3 +34,4 @@
 
 ![](../../Attatchments/database-architecture-20230924-18.png)
 
+[Users and Admins](users-and-admins.md)
