@@ -1,5 +1,5 @@
 # Sem5-Obsidian
-A Knowledge base fo all Sem 5 Materials
+A Knowledge base to all Sem 5 Materials
 
 
 
