@@ -52,4 +52,4 @@ Multiclass outputs can be not one hot, so useful for many categories(classes)
 ![](Pasted%20image%2020230923154143.png)
 while calculating loss just take the log term that corresponds with output
 
-[Index](Index.md)
+[index](MI/Unit_2/index.md)

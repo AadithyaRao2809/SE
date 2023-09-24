@@ -36,4 +36,4 @@
 - Flexibility to change data structures
 - Availability of current information
 
-**Next section** - [View of Data](View%20of%20Data.md)
+**Next section** - [view-of-data](view-of-data.md)

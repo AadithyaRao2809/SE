@@ -1,5 +1,5 @@
 # Machine Intelligence
 
-- [Unit 1](unit-1)
-
+- [Unit 1](MI/Unit_2/index.md)
+- [[uni]]
 ---

@@ -19,10 +19,10 @@ $\frac{\partial L}{\partial Z}=-(y-\hat{y})$
 ![](Pasted%20image%2020230923170631.png)
 ![](Pasted%20image%2020230923170716.png)
 
-[Multi Class bwd](bwd_multi.excalidraw)
+[Multi Class bwd](bwd_multi.excalidraw.md)
 ![](Pasted%20image%2020230923215252.png)
 
 Start backwards and memoize, later derivatives will be used, no need to calculate
 
-[Index](Index.md)
+[index](MI/Unit_2/index.md)
 

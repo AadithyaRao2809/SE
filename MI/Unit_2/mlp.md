@@ -16,4 +16,4 @@ There can be many output nodes, like in multiclass classification
 
 
 
-[Index](Index.md)
+[index](MI/Unit_2/index.md)

@@ -112,6 +112,6 @@ Taking the example of a University Database
 
 
 
-**Next section** - [Database Languages](Database%20Languages.md)
+**Next section** - [database-languages](database-languages.md)
 
 
