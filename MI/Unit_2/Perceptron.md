@@ -1,4 +1,4 @@
-![[../../Attatchments/Perceptron-20230924.png]]
+![[../../Attachments/Perceptron-20230924.png]]
 #### Differences:
 - Complexity
 - Processing logic
@@ -6,7 +6,7 @@
 
 #### Geometric Intuition
 
-![[../../Attatchments/Perceptron-20230924-1.png]]
+![[../../Attachments/Perceptron-20230924-1.png]]
 
 In 3D
 $ax + by + cz + d \geq 0$
@@ -16,12 +16,12 @@ Equation of a plane, in 4D we get a hyperplane.
 
 
 #### How to train
-![](../../Attatchments/Perceptron-20230924-2.png)
-![](../../Attatchments/Perceptron-20230924-3.png)
-![](../../Attatchments/Perceptron-20230924-4.png)
-![](../../Attatchments/Perceptron-20230924-5.png)
+![](../../Attachments/Perceptron-20230924-2.png)
+![](../../Attachments/Perceptron-20230924-3.png)
+![](../../Attachments/Perceptron-20230924-4.png)
+![](../../Attachments/Perceptron-20230924-5.png)
 #### Problems with perceptron trick
-![](../../Attatchments/Perceptron-20230924-6.png)
+![](../../Attachments/Perceptron-20230924-6.png)
 1) Which line is better?
 2) Problem with convergence, if you don't select random points properly, line wont move
 
@@ -32,9 +32,9 @@ L=\frac{1}{n} \sum_{i=1}^{n} max(0,-y_i f(x_i))
 $$
 
 for correct predictions, $y_i$ and $f(x_i)$ (prediction) have same sign, so the above returns 0 error 
-![](../../Attatchments/Perceptron-20230924-7.png)
-![](../../Attatchments/Perceptron-20230924-8.png)
-![](../../Attatchments/Perceptron-20230924-9.png)
+![](../../Attachments/Perceptron-20230924-7.png)
+![](../../Attachments/Perceptron-20230924-8.png)
+![](../../Attachments/Perceptron-20230924-9.png)
 
 | Loss function | Activation | Output |
 | ------------- | ---------- | ------ |

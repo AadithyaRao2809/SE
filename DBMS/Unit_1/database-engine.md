@@ -11,11 +11,11 @@
 - DDL Interpreter
 - DML Compiler
 
-![](../../Attatchments/database-engine-20230924-3.png)
+![](../../Attachments/database-engine-20230924-3.png)
 
 ### Transaction Manager
 -  Recovery manager - Rollbacks and ensuring transaction atomicity.
 - Consistency manager - ensures data consistency across multiple transactions.
-![](../../Attatchments/Pasted%20image%2020230924145107.png)
+![](../../Attachments/Pasted%20image%2020230924145107.png)
 
 [Database Architecture](database-architecture)
