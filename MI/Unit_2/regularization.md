@@ -54,5 +54,14 @@ $\lambda$ ranges from 0 to infinity
 ![[../../Attachments/regularization 2023-09-25 16.34.48.excalidraw]]
 
 - #### Dropout layers
+ ![](../../Attachments/regularization-20230925-10.png)
+![](../../Attachments/regularization-20230925-11.png)
+![](../../Attachments/regularization-20230925-12.png)
+![](../../Attachments/regularization-20230925-13.png)
+- weak weights not contributing to the loss
+- active weights get trained
+- promotes self development
+- used in CNN
+
 - #### Early Stopping
 - #### Data Augmentation
