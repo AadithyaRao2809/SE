@@ -75,13 +75,51 @@ $P_0$ is origin
 ![](../Attachments/Unit%202-20230926-8.png)
 euclidian adds a distance tuple-special space where vectors represent points in n dimensional real space
 
-#### Coordinates in OpenGL
-1) Object/Model
-2) World 
-3) Camera
-4) Clip
-5) Normalized Device 
-6) Window/Screen
+
+#### Coordinate System in openGL
+##### Object/Local Coordinate System (Model Space)
+
+- **Purpose:** Local coordinate system for individual objects.
+- **Origin:** Typically at the object's center.
+- **Transformation:** Object-specific transformations (e.g., translation, rotation, scaling) are applied here.
+- **Example:** Car components are positioned and oriented relative to the car's local coordinate system.
+
+##### World Coordinate System (World Space)
+
+- **Purpose:** Global reference frame for the entire scene.
+- **Origin:** Arbitrary, often set at a convenient location.
+- **Transformation:** Objects are placed and oriented within the world coordinate system.
+- **Example:** Multiple objects (e.g., car, building, tree) are positioned and oriented in the world coordinate system.
+
+##### Eye Space (Camera Space)
+
+- **Purpose:** Represents the view from the camera's perspective.
+- **Origin:** Typically at the camera's position (viewer's eye).
+- **Transformation:** View matrix maps objects from world space to eye space for rendering.
+- **Example:** A camera looks at a car, transforming its position and orientation into eye space.
+
+##### Clip Space
+
+- **Purpose:** Homogeneous coordinate system for clipping and perspective division.
+- **Origin:** At the frustum's center defined by the camera.
+- **Transformation:** Projection matrix maps objects from eye space to clip space. Clipping and perspective division occur here.
+- **Example:** Objects outside the camera's frustum are clipped, and perspective effects are applied.
+
+##### Normalized Device Coordinate (NDC) Space
+
+- **Purpose:** Coordinates after perspective division and normalization.
+- **Origin:** Typically at the screen's center.
+- **Range:** Coordinates range from -1 to 1 along each axis.
+- **Transformation:** Mapped from clip space; further transformations for screen mapping.
+- **Example:** Coordinates are normalized for final screen mapping.
+
+##### Screen Space
+
+- **Purpose:** Represents 2D screen or viewport coordinates.
+- **Origin:** Typically at the top-left screen corner.
+- **Transformation:** Viewport transformation maps NDC coordinates to screen pixels.
+- **Example:** Objects are in pixel coordinates for direct screen display.
+
 
 #### Change of coordinate systems
 ![](../Attachments/Unit%202-20230926-9.png)
@@ -101,8 +139,6 @@ euclidian adds a distance tuple-special space where vectors represent points in 
 ##### Homogenous Coordinates
 ![](../Attachments/Unit%202-20230926-14.png)
 ![](../Attachments/Unit%202-20230926-15.png)
-In the above you are changing basis
-lets take rotations around Z for example, 
 ![](../Attachments/Unit%202-20230926-19.png)
 ![[../Attachments/Unit 2 2023-09-26 17.00.32.excalidraw]]
 ![](../Attachments/Unit%202-20230926-20.png)
@@ -115,12 +151,20 @@ Sheer not included
 
 
 ### Quaternions
+![](../Attachments/Unit%202-20230926-26.png)
+![](../Attachments/Unit%202-20230926-27.png)
+![](../Attachments/Unit%202-20230926-28.png)
 ![](../Attachments/Unit%202-20230926-16.png)
 ![](../Attachments/Unit%202-20230926-17.png)
 u is unit so sqrt(u1+u2+u3)=1
 ![](../Attachments/Pasted%20image%2020230926164414.png)
 ![](../Attachments/Unit%202-20230926-18.png)
 $v_1$ stays there while other two rotate by 2$\phi$ around $i$
+![](../Attachments/Unit%202-20230926-22.png)
+![](../Attachments/Unit%202-20230926-23.png)
+![](../Attachments/Unit%202-20230926-24.png)
+![[../Attachments/Unit 2 2023-09-26 20.48.34.excalidraw]]
+
 
 
 
