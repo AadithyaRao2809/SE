@@ -6,7 +6,7 @@
 - Coordinate system gives a number
 
 
-#### Spaces
+### Spaces
 - **vector**
 	consists of vectors and scalars
 	
@@ -19,19 +19,21 @@
 - **euclidean**
 	adds a measure of size and distance to vector space
 
-
-#### ADT
-
-sees points,vectors and scalars as ADT's
-Give a datatype and define operations
-
+#### Affine
 for affine:
 ![](../Attachments/Unit%202-20230926.png)
 These are not arbitrary points
 constrained by $\alpha_1$ & $\alpha_2$
 ![](../Attachments/Unit%202-20230926-1.png)
 
-#### Convex Object
+
+### ADT
+
+sees points,vectors and scalars as ADT's
+Give a datatype and define operations
+
+
+### Convex Object
 
 All interior angles <180$\degree$
 ![](../Attachments/Unit%202-20230926-2.png)
@@ -66,7 +68,7 @@ We can represent any vector(magnitude and direction), but we still face the prob
 ![](../Attachments/Unit%202-20230926-6.png)
 
 **INSERT AFFINE SPACE**
-Choose origin $p_0$ and we attach basis vectors there->called a frame
+Choose origin $p_0$ and weattach basis vectors there->called a frame
 ![](../Attachments/Unit%202-20230926-7.png)
 $P_0$ is origin
 
