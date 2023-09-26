@@ -18,4 +18,4 @@
 - granting authorization for data access
 - Routine maintenance
 
-[Relational Model](relational-model)
+[Relational Model](relational-model.md)
