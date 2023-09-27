@@ -4,7 +4,7 @@ Any recurrence relation can be represented as  $T(n) = aT(\frac{n}{b})+f(n)$
 where 
 - $T(n)$ is monotonic. Eg. T(n) cannot be sin(n)
 - $f(n)$ is of the form   $n^{k}\log^pn$. 
-
+- a is a constant
 #### $if\ a > b^k$
 $$T(n) \in \Theta(n^{\log_ba})$$ 
 
