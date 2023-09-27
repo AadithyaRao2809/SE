@@ -2,31 +2,29 @@
 
 
 Sequence Learning
-![](../../Attachments/Pasted%20image%2020230925173108.png)
+![](../../Attachments/cnn-20230927-1.png)
 
 ### CNN
 
 <u>Faeture Mapping</u>
-![](../../Attachments/Pasted%20image%2020230925173428.png)
+![](../../Attachments/cnn-20230927-2.png)
 
 ##### Convoltion filter
 
 $$ Output\ Image\ size\ =\ \dfrac{n-f+2p}{s}+1$$
-![](../../Attachments/Pasted%20image%2020230925174258.png)
+![](../../Attachments/cnn-20230927-3.png)
 
-![](../../Attachments/Pasted%20image%2020230925174507.png)
+![](../../Attachments/cnn-20230927-4.png)
 
-![](../../Attachments/Pasted%20image%2020230925180548.png)
-
+![](../../Attachments/cnn-20230927-5.png)
 	$$no.\ of\ parametrs=k^2*c*n$$
 
-![](../../Attachments/Pasted%20image%2020230925181638.png)
+![](../../Attachments/cnn-20230927-6.png)
 
-![](../../Attachments/Pasted%20image%2020230925185915.png)
+![](../../Attachments/cnn-20230927-7.png)
 
-![](../../Attachments/Pasted%20image%2020230925190620.png)
+![](../../Attachments/cnn-20230927-8.png)
 
-![../../Attachments/Pasted image 20230925191911.png](../../Attachments/Pasted%20image%2020230925191911.png)
-![](../../Attachments/Pasted%20image%2020230925192242.png)
-![](../../Attachments/Pasted%20image%2020230925193622.png)
-****![](../../Attachments/Pasted%20image%2020230925193615.png)****
+![../../Attachments/cnn-20230927-9.png](../../Attachments/cnn-20230927-9.png)
+![](../../Attachments/cnn-20230927-10.png)
+![](../../Attachments/cnn-20230927-11.png)

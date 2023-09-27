@@ -21,10 +21,10 @@
 
 #### Affine
 for affine:
-![](../Attachments/Unit%202-20230926.png)
+![](../Attachments/Unit%202-20230927-1.png)
 These are not arbitrary points
 constrained by $\alpha_1$ & $\alpha_2$
-![](../Attachments/Unit%202-20230926-1.png)
+![](../Attachments/Unit%202-20230927-2.png)
 
 
 ### ADT
@@ -36,7 +36,7 @@ Give a datatype and define operations
 ### Convex Object
 
 All interior angles <180$\degree$
-![](../Attachments/Unit%202-20230926-2.png)
+![](../Attachments/Unit%202-20230927-3.png)
 
 Smallest dimension convex object that contains a set of points->convex hull
 
@@ -51,18 +51,18 @@ Smallest dimension convex object that contains a set of points->convex hull
 
 
 *Grahams Algo for convex full*
-![](../Attachments/Unit%202-20230926-3.png)
+![](../Attachments/Unit%202-20230927-4.png)
 If another point was at 0 level,we give priority to the leftmost point
 
 ### Barycentric Coordinate
 
 Representation of a point wrt other points
-![](../Attachments/Unit%202-20230926-4.png)
+![](../Attachments/Unit%202-20230927-5.png)
 
 
 ### Coordinate System And Frames
 
-![](../Attachments/Unit%202-20230926-5.png)
+![](../Attachments/Unit%202-20230927-6.png)
 ![[../Attachments/Unit 2 2023-09-26 13.36.32.excalidraw]]
 We can represent any vector(magnitude and direction), but we still face the problem of representing a point(fixed position)
 ![](../Attachments/Unit%202-20230926-6.png)
@@ -127,6 +127,8 @@ euclidian adds a distance tuple-special space where vectors represent points in 
 ![](../Attachments/Unit%202-20230926-10.png)
 ![](../Attachments/Unit%202-20230926-11.png)
 ![](../Attachments/Unit%202-20230926-12.png)
+![../Attachments/Unit 2 2023-09-27 18.42.47.excalidraw.svg](../Attachments/Unit%202%202023-09-27%2018.42.47.excalidraw.svg)
+%%[[../Attachments/Unit 2 2023-09-27 18.42.47.excalidraw.md|🖋 Edit in Excalidraw]], and the [[../Attachments/Unit 2 2023-09-27 18.42.47.excalidraw.dark.svg|dark exported image]]%%
 
 - Point: 
 	![](../Attachments/Unit%202-20230926-13.png)

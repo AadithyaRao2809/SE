@@ -4,7 +4,7 @@ Boyer-Moore string matching algorithm, creates two tables while prepossessing th
 
 **Bad Symbol Shift** is of size $|\Sigma|$ and it determines
 - the distance of every character from the ending.
-- for the last character, it second occurrence must be taken. 
+- for the last character, its second occurrence must be taken. 
 - If a character doesn't exist, then its value should be the length of the pattern.
 Eg. If the pattern is `AABCAC`  for the alphabet $\{A,B,C,D\}$ is
 
@@ -15,7 +15,7 @@ Eg. If the pattern is `AABCAC`  for the alphabet $\{A,B,C,D\}$ is
 | C    | 2     |
 | D    | 6     |
 
-Th output from the bad symbol shift is $d_1$
+The output from the bad symbol shift is $d_1$
 
 **Good Suffix Shift** is of size m and it has
 - the position from a suffix of size $i$ when the suffix letters  repeat

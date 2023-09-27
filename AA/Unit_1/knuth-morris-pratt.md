@@ -28,8 +28,8 @@ Eg. Pattern sting `ababaca`
 
 ##### The Matching
 
-We start with an index `i` at the start of the string and an index `j` at the start of the pattern.  
-On a successful character match, we increment both `i`and  `j`.
-If there is a mismatch and `j` is at 0, we increment only `i` . 
-On Mismatch if `j` is not 0, we set `j` to `lps[j-1]`, and continue the string matching. 
-If `i` reaches the size of the string, patter is not found, if `j` reaches size of pattern, pattern is found at index `i`.
+- We start with an index `i` at the start of the string and an index `j` at the start of the pattern.  
+- On a successful character match, we increment both `i`and  `j`.
+- If there is a mismatch and `j` is at 0, we increment only `i` . 
+- On Mismatch if `j` is not 0, we set `j` to `lps[j-1]`, and continue the string matching. 
+- If `i` reaches the size of the string, patter is not found, if `j` reaches size of pattern, pattern is found at index `i`.
