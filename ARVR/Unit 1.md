@@ -1,6 +1,9 @@
 ### What is VR
 ![](../Attachments/Unit%201-20230926.png)
+
+### 3 I's
 ![](../Attachments/Unit%201-20230926-1.png)
+
 ### History
 ![](../Attachments/Unit%201-20230926-2.png)
 ![](../Attachments/Unit%201-20230926-3.png)

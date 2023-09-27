@@ -136,7 +136,7 @@ euclidian adds a distance tuple-special space where vectors represent points in 
 #### Updated Transformation matrix
 
 **But basis vector maps to a real point**
-##### Homogenous Coordinates
+#### Homogenous Coordinates
 ![](../Attachments/Unit%202-20230926-14.png)
 ![](../Attachments/Unit%202-20230926-15.png)
 ![](../Attachments/Unit%202-20230926-19.png)
