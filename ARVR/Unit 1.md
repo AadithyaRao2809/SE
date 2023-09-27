@@ -268,3 +268,139 @@ void display()
 }
 ```
 
+```
+#include<gl/glut.h>
+#include <stdlib.h>
+#include <math.h>
+#include <time.h>
+#include <stdio.h>
+
+
+//Function: draw Colored Cube
+void coloredCube()
+{
+
+    glColor3f(1.0f, 0.0f, 0.0f);
+
+    glBegin(GL_POLYGON);
+    glVertex3f(-1.0, -1.0, 1.0);
+    glVertex3f(1.0, -1.0, 1.0);
+    glVertex3f(1.0, 1.0, 1.0);
+    glVertex3f(-1.0, 1.0, 1.0);
+    glEnd();
+
+    //right face
+    glColor3f(0.0f, 1.0f, 0.0f);
+    glBegin(GL_POLYGON);
+    glVertex3f(1, -1, 1);
+    glVertex3f(1, 1, 1);
+    glVertex3f(1, 1, -1);
+    glVertex3f(1, -1, -1);
+    glEnd();
+
+    //back face
+    glColor3f(0.0f, 0.0f, 1.0f);
+    glBegin(GL_POLYGON);
+    glVertex3f(-1, -1, -1);
+    glVertex3f(1, -1, -1);
+    glVertex3f(1, 1, -1);
+    glVertex3f(-1, 1, -1);
+    glEnd();
+
+
+    glColor3f(1.0f, 1.0f, 0.0f);
+    glBegin(GL_POLYGON);
+    glNormal3f(-1, 0, 0);
+    glVertex3f(-1, -1, 1);
+    glVertex3f(-1, 1, 1);
+    glVertex3f(-1, 1, -1);
+    glVertex3f(-1, -1, -1);
+    glEnd();
+
+    //topface
+    glColor3f(0.0f, 1.0f, 1.0f);
+    glBegin(GL_POLYGON);
+    glVertex3f(1, 1, 1);
+    glVertex3f(-1, 1, 1);
+    glVertex3f(-1, 1, -1);
+    glVertex3f(1, 1, -1);
+    glEnd();
+
+    //bottom face
+    glColor3f(1.0f, 0.0f, 1.0f);
+    glBegin(GL_POLYGON);
+    glVertex3f(1, -1, 1);
+    glVertex3f(-1, -1, 1);
+    glVertex3f(-1, -1, -1);
+    glVertex3f(1, -1, -1);
+    glEnd();
+    /* flush drawing routines to the opengl window*/
+    glFlush();
+}
+
+//Function: Display Call back - used to draw the required visualization
+//return type: void
+//parameters: void
+
+void display()
+{
+	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+    gluLookAt(0, 0, 10, 0, 0, 0, 0, 1, 0);
+    //glScalef(0.8, 0.8, 0.8);
+    coloredCube();
+    glTranslatef(3, 0, 6);
+    coloredCube();
+	glFlush();
+}
+
+int main(int argc, char* argv[])
+{
+	//Initialize glut
+	glutInit(&argc, argv);
+
+	//configure opengl window
+	glutInitWindowSize(500, 500);
+	glutInitWindowPosition(0, 0);
+	glutInitDisplayMode(GLUT_RGB | GLUT_DEPTH);
+
+	//create the Opengl window with a specific name
+	glutCreateWindow("My First OpenGL Window");
+
+    /* define the projection transformation */
+    glMatrixMode(GL_PROJECTION);
+    glLoadIdentity();
+    glOrtho(-10, 10, -10, 10, 10, -10);
+    gluPerspective(90, 1, 0.001, 1000);
+	//register the callback for displaying
+	glutDisplayFunc(display);
+
+	//star the opengl loop 
+	glutMainLoop();
+}
+```
+#### `glOrtho(-10, 10, -10, 10, 10, -10)`
+
+`glOrtho` is used to set up an orthographic projection, commonly used in 2D games and engineering applications. It eliminates perspective distortion, where objects do not appear smaller with distance. The provided parameters represent:
+
+- `left`, `right`: The coordinates of the left and right vertical clipping planes. Objects outside the range of -10 to 10 on the X-axis will be clipped.
+- `bottom`, `top`: The coordinates of the bottom and top horizontal clipping planes. Objects outside the range of -10 to 10 on the Y-axis will be clipped.
+- `near`, `far`: The distances to the near and far clipping planes. Objects closer than 10 units or farther than 10 units from the camera will be clipped.
+
+`glOrtho` establishes an orthographic projection matrix, flattening the 3D scene onto a 2D plane.
+
+#### `gluPerspective(90, 1, 0.001, 1000)`
+
+`gluPerspective` sets up a perspective projection, replicating the effect of objects appearing smaller with distance. The provided parameters represent:
+
+- `fovy`: The field of view angle in degrees, vertically. Here, it's set to 90 degrees, creating a wide-angle view.
+- `aspect`: The aspect ratio, usually the width of the viewport divided by the height. It's set to 1, indicating a square viewport.
+- `zNear`, `zFar`: The distances to the near and far clipping planes. Objects closer than 0.001 units or farther than 1000 units from the camera will be clipped.
+-  `fovy/fovx`=`w/h`=aspect ratio
+
+This function creates a perspective projection matrix, mimicking real-world perspective effects.
+
+`Clip` is wrt to camera frame
+![](../Attachments/Unit%201-20230927.png)
+![](../Attachments/Unit%201-20230927-1.png)
+
+
