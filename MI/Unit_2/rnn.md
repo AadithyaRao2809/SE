@@ -46,5 +46,5 @@ Keep looping until finaly timestamp, that will lead to output
 - Improves semantic meaning
 - helps fight sparsity
 
-![[../../Attachments/rnn-20230927-4.svg]]
+![../../Attachments/rnn-20230927-4.svg](../../Attachments/rnn-20230927-4.svg)
 %%[[../../Attachments/rnn2023-09-27,21.12.29.excalidraw.md|🖋 Edit in Excalidraw]], and the [[../../Attachments/rnn2023-09-27,21.12.29.excalidraw.dark.svg|dark exported image]]%%
