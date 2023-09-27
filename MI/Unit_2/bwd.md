@@ -19,8 +19,8 @@ $\frac{\partial L}{\partial Z}=-(y-\hat{y})$
 ![](../../Attachments/bwd-20230924-14.png)
 ![](../../Attachments/bwd-20230924-15.png)
 
-[Multi Class bwd](bwd_multi.excalidraw.md)
-![[../../Attachments/bwd2023-09-27,21.19.57.excalidraw.svg]]
+[Multi Class bwd](bwd_multi.excalidraw.md) 
+![../../Attachments/bwd2023-09-27,21.19.57.excalidraw.svg](../../Attachments/bwd2023-09-27,21.19.57.excalidraw.svg)a
 %%[[../../Attachments/bwd2023-09-27,21.19.57.excalidraw.md|🖋 Edit in Excalidraw]], and the [[../../Attachments/bwd2023-09-27,21.19.57.excalidraw.dark.svg|dark exported image]]%%
 ![](../../Attachments/bwd-20230924-16.png)
 
