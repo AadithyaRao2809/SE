@@ -35,9 +35,8 @@ for every timestamp,feed output into next timestap input, for first time feed 0|
 Keep looping until finaly timestamp, that will lead to output
 
 
-![[../../Attachments/rnn2023-09-27,19.07.34.excalidraw.svg]]
-%%[[../../Attachments/rnn2023-09-27,19.07.34.excalidraw.md|🖋 Edit in Excalidraw]], and the [[../../Attachments/rnn2023-09-27,19.07.34.excalidraw.dark.svg|dark exported image]]%%
-
+![[../../Attachments/rnn20230927_11.excalidraw.svg]]
+%%[[../../Attachments/rnn20230927_11.excalidraw.md|🖋 Edit in Excalidraw]], and the [[../../Attachments/rnn20230927_11.excalidraw.dark.svg|dark exported image]]%%
 ![](../../Attachments/rnn-20230927-3.png)
 
 ### Embedding
@@ -46,5 +45,12 @@ Keep looping until finaly timestamp, that will lead to output
 - Improves semantic meaning
 - helps fight sparsity
 
-![../../Attachments/rnn-20230927-4.svg](../../Attachments/rnn-20230927-4.svg)
-%%[[../../Attachments/rnn2023-09-27,21.12.29.excalidraw.md|🖋 Edit in Excalidraw]], and the [[../../Attachments/rnn2023-09-27,21.12.29.excalidraw.dark.svg|dark exported image]]%%
+### Backpropagation in RNN
+
+![](../../Attachments/rnn-20230928.png)
+
+![[../../Attachments/rnn20230928.excalidraw.svg]]
+%%[[../../Attachments/rnn20230928.excalidraw.md|🖋 Edit in Excalidraw]], and the [[../../Attachments/rnn20230928.excalidraw.dark.svg|dark exported image]]%%
+![[../../Attachments/rnn20230928_0.excalidraw.svg]]
+%%[[../../Attachments/rnn20230928_0.excalidraw.md|🖋 Edit in Excalidraw]], and the [[../../Attachments/rnn20230928_0.excalidraw.dark.svg|dark exported image]]%%
+
