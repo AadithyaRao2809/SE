@@ -9,7 +9,7 @@ that\ 0 \leq c_{1}g(n)\ \leq f(n)\ \leq c_{2} g(n)\ for\ all\ n\geq n_{o}\ \}
 \end{align}
 $$
 
-### $O-Notation$
+## $O-Notation$
 
 $$
 \begin{align}
@@ -19,7 +19,7 @@ that\ 0  \leq f(n)\ \leq c\ g(n)\ for\ all\ n\geq n_{o}\ \}
 \end{align}
 $$
 
-### $\Omega - Notation$
+## $\Omega - Notation$
 $$
 \begin{align}
 
@@ -45,7 +45,7 @@ $$
 that\ 0  < c\ g(n)\ < f(n)\ for\ all\ n\geq n_{o}\ \}
 \end{align}
 $$
-### Limit Method
+## Limit Method
 
 For an algorithm if  
 
