@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ## Recurrent Neural Network
 
 **Used for sequential data**
