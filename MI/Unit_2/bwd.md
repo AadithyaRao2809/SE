@@ -24,5 +24,5 @@ $\frac{\partial L}{\partial Z}=-(y-\hat{y})$
 
 Start backwards and memoize, later derivatives will be used, no need to calculate
 
--  [index](/MI/Unit_2/index.md)
+-  [unit-2](unit-2.md)
 

@@ -8,7 +8,7 @@ tags: [excalidraw]
 
 
 # Text Elements
-[[Index]] ^QAJ1jF4v
+[[../../SE/Unit_2/unit-2]] ^QAJ1jF4v
 
 %%
 # Drawing

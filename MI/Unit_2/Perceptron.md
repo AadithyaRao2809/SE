@@ -50,7 +50,7 @@ Fails with non linear data
 
 
 
-[index](MI/Unit_2/index.md)
+[unit-2](unit-2.md)
 
 
 

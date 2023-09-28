@@ -28,7 +28,7 @@
 - can use relu but dying gradient problem for 0 or neg activations
 - there is exploding gradient problem which is the opposite to this (in RNN)
 
-[index](MI/Unit_2/index.md)
+[unit-2](unit-2.md)
 
 
 
