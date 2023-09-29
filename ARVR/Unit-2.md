@@ -21,10 +21,10 @@
 
 #### Affine
 for affine:
-![](../Attachments/Unit%202-20230926.png)
+![](../Attachments/Unit-2-20230929-16.png)
 These are not arbitrary points
 constrained by $\alpha_1$ & $\alpha_2$
-![](../Attachments/Unit%202-20230926-1.png)
+![](../Attachments/Unit-2-20230929-17.png)
 
 
 ### ADT
@@ -36,7 +36,7 @@ Give a datatype and define operations
 ### Convex Object
 
 All interior angles <180$\degree$
-![](../Attachments/Unit%202-20230926-2.png)
+![](../Attachments/Unit-2-20230929-18.png)
 
 Smallest dimension convex object that contains a set of points->convex hull
 
@@ -51,18 +51,18 @@ Smallest dimension convex object that contains a set of points->convex hull
 
 
 *Grahams Algo for convex full*
-![](../Attachments/Unit%202-20230926-3.png)
+![](../Attachments/Unit-2-20230929.png)
 If another point was at 0 level,we give priority to the leftmost point
 
 ### Barycentric Coordinate
 
 Representation of a point wrt other points
-![](../Attachments/Unit%202-20230926-4.png)
+![](../Attachments/Unit-2-20230929-19.png)
 
 
 ### Coordinate System And Frames
 
-![](../Attachments/Unit%202-20230926-5.png)
+![](../Attachments/Unit-2-20230929-20.png)
 ![[../Attachments/Unit 2 2023-09-26 13.36.32.excalidraw]]
 We can represent any vector(magnitude and direction), but we still face the problem of representing a point(fixed position)
 ![](../Attachments/Unit%202-20230926-6.png)
@@ -157,7 +157,7 @@ Sheer not included
 ![](../Attachments/Unit%202-20230926-16.png)
 ![](../Attachments/Unit%202-20230926-17.png)
 u is unit so sqrt(u1+u2+u3)=1
-![](../Attachments/Pasted%20image%2020230926164414.png)
+![](../Attachments/ARVR-unit2-20230926164414.png)
 ![](../Attachments/Unit%202-20230926-18.png)
 $v_1$ stays there while other two rotate by 2$\phi$ around $i$
 ![](../Attachments/Unit%202-20230926-22.png)
