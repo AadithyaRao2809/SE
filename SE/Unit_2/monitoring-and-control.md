@@ -49,4 +49,4 @@ Includes availability and propagation - communication including documentation.
 
 ![[../../Attachments/monitoring-and-control-20230929.png]]
 
-[[closure|Closure]]
+[closure](closure.md)

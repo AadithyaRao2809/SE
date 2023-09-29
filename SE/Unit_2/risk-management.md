@@ -19,4 +19,4 @@ Unexpected event.
 - Execution and monitor mitigation plan
 
 
-[[quality-managemt|Quality Management]]
+[quality-managemt](quality-managemt.md)

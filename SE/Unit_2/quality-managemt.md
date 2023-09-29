@@ -14,4 +14,4 @@ Conditions that should be met for testing
 #### Early Verification
 Alpha and Beta testing
 
-[[project-tracking|Project Tracking]]
+[project-tracking](project-tracking.md)

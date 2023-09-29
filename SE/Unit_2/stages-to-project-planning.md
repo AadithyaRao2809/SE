@@ -75,6 +75,6 @@ Holidays, leaves, working hours
 of scheduling
 due to changing requirements, schedule, people, cost.
 
-[[risk-management|Risk Management]]
+[risk-management](risk-management.md)
 
 
