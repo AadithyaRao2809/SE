@@ -8,6 +8,7 @@
 8. 
 	- [convolution](convolution.md)
 	- [cnn](cnn.md)
-9. [rnn](rnn.md)
-10. [lstm](lstm.md)
-11. [gru](gru.md)
+9. [batch-normalization](batch-normalization.md)
+10. [rnn](rnn.md)
+11. [lstm](lstm.md)
+12. [gru](gru.md)

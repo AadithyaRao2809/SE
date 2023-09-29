@@ -50,7 +50,8 @@ $\lambda$ ranges from 0 to infinity
 
 
 
-![[../../Attachments/regularization 2023-09-25 16.34.48.excalidraw]]
+![[../../Attachments/overfitting20230929.excalidraw.svg]]
+%%[[../../Attachments/overfitting20230929.excalidraw.md|🖋 Edit in Excalidraw]], and the [[../../Attachments/overfitting20230929.excalidraw.dark.svg|dark exported image]]%%
 
 - #### Dropout layers
  ![](../../Attachments/regularization-20230925-10.png)

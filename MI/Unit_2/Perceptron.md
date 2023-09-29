@@ -1,4 +1,4 @@
-![[../../Attachments/Perceptron-20230924.png]]
+![../../Attachments/Perceptron-20230924.png](../../Attachments/Perceptron-20230924.png)
 #### Differences:
 - Complexity
 - Processing logic
@@ -6,7 +6,7 @@
 
 #### Geometric Intuition
 
-![[../../Attachments/Perceptron-20230924-1.png]]
+![../../Attachments/Perceptron-20230924-1.png](../../Attachments/Perceptron-20230924-1.png)
 
 In 3D
 $ax + by + cz + d \geq 0$
