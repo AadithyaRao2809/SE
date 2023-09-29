@@ -33,3 +33,58 @@ But commodity servers are not reliable
 redundancy data stored on 3 machines (so that if one fails, one can make a copy and another can serve)
 
 ![](../../Attachments/hdfs-20230928-1.png)
+
+#### HDFS Fault Tolerace
+##### Replication
+- Used in Hadoop 2
+- Byte Replication with replication factor 3
+![](../../Attachments/hdfs-20230928-3.png)
+
+##### Erasure Coding
+- Used in Hadoop 3
+ ![](../../Attachments/hdfs-20230928-4.png)
+- half the storage compared to Replication
+#### **Namenode**
+- Namenode *manages directories* and the file system namespace.
+- It *regulates access rights* for open, close, and rename operations on files.
+- Namenode maintains the *mapping of blocks to data nodes* in the cluster.
+- It handles *block failures* and maintains information in the *transaction log*.
+- *Metadata* is *stored in memory* for efficient file system operations.
+##### HDFS Namenode Components
+
+- **Namenode** manages Hadoop HDFS metadata.
+- Two critical components: **Edit Log** and **FsImage**.
+
+###### Edit Log
+- Also known as **transaction log**.
+- Records real-time **file system changes**.
+- Append-only log for maintaining **sequential changes**.
+- Logs operations like **create, delete, rename**.
+- Small and frequently updated.
+
+###### FsImage
+- Represents **snapshot of metadata** at a specific time.
+- Contains directory tree, file names, permissions.
+- Relatively **static and infrequently updated**.
+- Generated periodically or during **checkpoints**.
+- Larger than Edit Log.
+
+###### Working Together
+- Namenode **startup/recovery**: Loads **FsImage** to reconstruct metadata, then **replays Edit Log**.
+- Ensures **consistency and durability** in case of crashes.
+- **Edit Log captures real-time transactions**, while **FsImage serves as a checkpoint** for recovery.
+
+CPU's got faster but memory didn't as much so increase block size 
+
+![](../../Attachments/hdfs-20230928-6.png)
+
+![](../../Attachments/hdfs-20230928-2.png)
+
+
+![](../../Attachments/hdfs-20230928-5.png)
+
+- Heartbeat not received can be due to problem at **source** or **problem in network**
+- Zookeeper cannot determine where the problem is
+- If **problem is in the network** and ANN is fine , but it has told SNN that it is now active, **two NN'S will be updating the HD** at the same time
+-  Solution : enforce that only one NN can write to HD
+- Fencing : currently active NN **virtually fences the HD** from the **other NN** by **blocking the network** (*STONITH -shoot the other node in the head*)
