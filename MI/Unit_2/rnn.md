@@ -28,6 +28,7 @@ feed input one by one
 
 ![](../../Attachments/rnn-20230927-2.png)
 ![](../../Attachments/rnn-20230927-6.png)
+![](../../Attachments/rnn-20230929-2.png)
 
 for every timestamp,feed output into next timestap input, for first time feed 0|random 
 
@@ -53,3 +54,23 @@ Keep looping until finaly timestamp, that will lead to output
 %%[[../../Attachments/rnn20230928..excalidraw|🖋 Edit in Excalidraw]], and the [[../../Attachments/rnn20230928.excalidraw.dark.svg|dark exported image]]%%
 ![../../Attachments/rnn20230928_0.excalidraw.svg](../../Attachments/rnn20230928_0.excalidraw.svg)
 %%[[../../Attachments/rnn20230928_0.excalidraw.md|🖋 Edit in Excalidraw]], and the [[../../Attachments/rnn20230928_0.excalidraw.dark.svg|dark exported image]]%%
+
+
+### Problems in RNN
+
+1. **Long Term Dependency**
+	Lot of timesteps, forgets input if there are many timestamps, so not good for sentences with many long term dependecies.
+	![](../../Attachments/rnn-20230929-1.png)
+	*Vaninishing gradient*
+	![](../../Attachments/rnn-20230929-3.png)
+	**Solution**
+	- Diff activation like relu or leaky relu
+	- Better Weight init
+	- Skip Rnn
+	- LSTM
+2. **Unstable Training**
+	Long dependency term is too big(relu)
+	**Solution**
+	- Gradient clipping
+	- Controlled learning rate
+	- LSTM
