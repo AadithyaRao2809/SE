@@ -15,5 +15,3 @@ There can be many output nodes, like in multiclass classification
 ![](../../Attachments/mlp-20230924-2.png)
 
 
-
-[unit-2](../../AA/unit-2.md)
