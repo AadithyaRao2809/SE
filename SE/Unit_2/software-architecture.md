@@ -16,9 +16,9 @@
 - distinct role in project
 - coding standards tools and 
 Makes high level design choices and tech standards. 
-![[../../Attatchments/software-architecture-20230924.png]] 
+![[../../Attachments/software-architecture-20230929.png]] 
 
-### Architectural Views, Styles and Patterns
+### Architectural Views, Styles and Patters
 **Views** Different Perspectives of stakeholders
 **Styles** how subsystems are organized.
 **Pattern** Observing and including known solutions to **structuring and functioning** of subsystems
@@ -40,7 +40,7 @@ Designer resolves design issues.
 #### Backlog
 Contains list of all undone features. 
 Context from architect, requirements from customer and constraints from sponsor
-![[../../Attatchments/software-architecture-20230924-1.png]]
+![[../../Attachments/software-architecture-20230929-1.png]]
 Ideally, components should have high cohesion low coupling
 
 **Decompose Based on**
@@ -61,7 +61,7 @@ code based, dont represent runtime structure
 useful to know what each part of the code does.
 
 
-![[../../Attatchments/software-architecture-20230924-2.png]]
+![[../../Attachments/software-architecture-20230929-2.png]]
 
 
 ##### Component and Connector View
@@ -86,7 +86,8 @@ Previous views are interrelated.
 - Implementation view: realisation of the system; UML diagrams
 - Deployment view: focus on system engineering
 
-![[../../Attatchments/software-architecture-20230924-3.png]]
+![[../../Attachments/software-architecture-20230929-3.png]]
+
 ### Architectural Styles
 characterized by the features that make it notable
 1. Vocabulary – A set of design elements.
@@ -99,7 +100,7 @@ characterized by the features that make it notable
 - characterized by the features that make it notable.
 - The main difference is that a pattern can be seen as a solution to a problem, while a style is more general and does not require a problem to solve for its appearance.
 
-![[../../Attatchments/software-architecture-20230924-4.png]]
+![[../../Attachments/software-architecture-20230929-4.png]]
 
 ### Importance of Styles and Patterns
 - **Benefits reuse** of design and code comps, ease of understanding architecture, increased interoperability
@@ -108,5 +109,5 @@ characterized by the features that make it notable
 - **Key to systematic reuse**
 
 
-[[SE/Unit_2/index|Unit 2]]
+[[unit-2|Unit 2]]
 
