@@ -1,4 +1,3 @@
-### Handling overfitting with regularization
 
 #### Bias and Variance
 ![](../../Attachments/regularization-20230925.png)

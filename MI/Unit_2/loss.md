@@ -1,3 +1,4 @@
+## Loss
 ### Why loss functions
 
 > *You can't improve what you cant measure
@@ -52,3 +53,7 @@ Multiclass outputs can be not one hot, so useful for many categories(classes)
 ![](../../Attachments/loss-20230924-6.png)
 while calculating loss just take the log term that corresponds with output
 
+![](../../Attachments/loss-20230929-1.png)
+![](../../Attachments/loss-20230929-2.png)
+## Activation
+![](../../Attachments/loss-20230929.png)

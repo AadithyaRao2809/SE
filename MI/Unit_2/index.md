@@ -4,11 +4,10 @@
 4. [gradient_des](gradient_des.md)
 5. [fwd](fwd.md)
 6. [bwd](bwd.md)
-7. [optimizers](optimizers.md)
-8. [regularization](regularization.md)
-9. 
+7. [overfitting](overfitting.md)
+8. 
 	- [convolution](convolution.md)
 	- [cnn](cnn.md)
-10. [rnn](rnn.md)
-11. [lstm](lstm.md)
-12. [gru](gru.md)
+9. [rnn](rnn.md)
+10. [lstm](lstm.md)
+11. [gru](gru.md)
