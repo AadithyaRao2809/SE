@@ -77,12 +77,33 @@ Weightage to recent epochs
 ![](../../Attachments/gradient_des-20230929-7.png)
 ![](../../Attachments/gradient_des-20230929-8.png)
  
-### Vanishing Gradient
-- deep layers, many times come across activation function derivatives that have (0,1] range, so it'll keep getting smaller 
+### Vanishing Gradient and Exploding Gradient 
+- deep layers, many times come across activation function derivatives that have (0,1] range, so it'll keep getting smaller . Even normalised or standardized input will get it smaller
 - sigmoid, tanh
 - can use relu but dying gradient problem for 0 or neg activations
 - there is exploding gradient problem which is the opposite to this (in RNN)
-- Proper weight initialization![](../../Attachments/gradient_des-20230929-12.png)
+- **Proper weight initialization** (in 2000 research stopped because of this)
+	- Vanishing
+	- Exploding
+	- Slow convergence
+	![](../../Attachments/gradient_des-20230929-14.png)
+	- `as in the derivating of loss step, with chain rule we will calculate for activation, we get 0 so no training`
+	- same for tanh
+	![](../../Attachments/gradient_des-20230929-15.png)
+	![](../../Attachments/gradient_des-20230929-16.png)
+	- so w11 and w12 are always the same, same for the others.Hidden layer collapses,like perceptron.
+	![](../../Attachments/gradient_des-20230929-17.png)
+	- same case
+	![](../../Attachments/gradient_des-20230929-18.png)
+	-  if you use tanh, the outputs again of tanh when close to 0 will output 0
+	- for sigmoid wont be as much
+	- relu still better tan sigmoid
+	- weights wont update
+	- if activation is small(if z is small) then![](../../Attachments/gradient_des-20230929-21.png) 
+	![](../../Attachments/gradient_des-20230929-20.png)
+		- relu in this case will explode
+	![](../../Attachments/gradient_des-20230929-12.png)
+	
 
 
 
