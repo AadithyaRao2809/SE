@@ -59,7 +59,7 @@ $Precision = \dfrac{TP}{TP+FP}$
 
 $Recall = \dfrac{TP}{TP + FN}$
 
-$Specificity =\dfrac{TN}{TN+TP}$
+$Specificity =\dfrac{TN}{TN+FP}$
 
 $F_1\ score = \dfrac{2*(recall*precision)}{recall + precision}$
 #### Multi Class Confusion Matrix
