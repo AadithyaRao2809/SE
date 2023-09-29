@@ -33,6 +33,6 @@
 ##### SOA Roles
 - **Service Provider:** Creates web services and offers them through a registry, defining terms of service.
 - **Service Broker/Registry:** Provides information about available services.
-- **Service Requester/Consumer:** Discovers services in the broker and connects to the provider.
+- **Service Requester/Consumer:** Discovers services in the bro[[../../AA/unit-2|Unit 2]]to the provider.
 
 [unit-2](unit-2.md)

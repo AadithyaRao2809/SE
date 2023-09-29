@@ -138,7 +138,7 @@ Derived from dfd,breaks entire system to lowest func modules ,and describes them
 - Describes situations a developer should avoid
 - In agile approaches, refactoring is applied when an anti-pattern is introduced
 
-### Contrasting structural approach vs object oriented approach
+### Contrasting structural approach [[../../AA/unit-2|Unit 2]]d approach
 
 
 

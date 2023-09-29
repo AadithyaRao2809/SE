@@ -52,4 +52,4 @@ Multiclass outputs can be not one hot, so useful for many categories(classes)
 ![](../../Attachments/loss-20230924-6.png)
 while calculating loss just take the log term that corresponds with output
 
-[unit-2](unit-2.md)
+[unit-2](../../AA/unit-2.md)

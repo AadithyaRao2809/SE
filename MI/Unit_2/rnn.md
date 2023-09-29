@@ -53,11 +53,3 @@ Keep looping until finaly timestamp, that will lead to output
 %%[[../../Attachments/rnn20230928..excalidraw|🖋 Edit in Excalidraw]], and the [[../../Attachments/rnn20230928.excalidraw.dark.svg|dark exported image]]%%
 ![[../../Attachments/rnn20230928_0.excalidraw.svg]]
 %%[[../../Attachments/rnn20230928_0.excalidraw.md|🖋 Edit in Excalidraw]], and the [[../../Attachments/rnn20230928_0.excalidraw.dark.svg|dark exported image]]%%
-
-=======
-# Recurrent Neural Networks
-
-![](../../Attachments/rnn-20230927-2.png)
-
-	![](../../Attachments/rnn-20230927-3.png)
->>>>>>> origin/master
