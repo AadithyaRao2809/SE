@@ -1,4 +1,4 @@
-1. [perceptron](perceptron.md)
+1. [percep](percep.md)
 2. [mlp](mlp.md)
 3. [loss](loss.md)
 4. [gradient_des](gradient_des.md)
