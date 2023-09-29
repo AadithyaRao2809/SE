@@ -35,7 +35,7 @@ for every timestamp,feed output into next timestap input, for first time feed 0|
 Keep looping until finaly timestamp, that will lead to output
 
 
-![[../../Attachments/rnn20230927_11.excalidraw.svg]]
+![../../Attachments/rnn20230927_11.excalidraw.svg](../../Attachments/rnn20230927_11.excalidraw.svg)
 %%[[../../Attachments/rnn20230927_11.excalidraw.md|🖋 Edit in Excalidraw]], and the [[../../Attachments/rnn20230927_11.excalidraw.dark.svg|dark exported image]]%%
 ![](../../Attachments/rnn-20230927-3.png)
 
@@ -49,7 +49,7 @@ Keep looping until finaly timestamp, that will lead to output
 
 ![](../../Attachments/rnn-20230928.png)
 
-![[../../Attachments/rnn20230928.excalidraw.svg]]
+![../../Attachments/rnn20230928.excalidraw.svg](../../Attachments/rnn20230928.excalidraw.svg)
 %%[[../../Attachments/rnn20230928..excalidraw|🖋 Edit in Excalidraw]], and the [[../../Attachments/rnn20230928.excalidraw.dark.svg|dark exported image]]%%
-![[../../Attachments/rnn20230928_0.excalidraw.svg]]
+![../../Attachments/rnn20230928_0.excalidraw.svg](../../Attachments/rnn20230928_0.excalidraw.svg)
 %%[[../../Attachments/rnn20230928_0.excalidraw.md|🖋 Edit in Excalidraw]], and the [[../../Attachments/rnn20230928_0.excalidraw.dark.svg|dark exported image]]%%
