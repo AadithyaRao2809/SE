@@ -27,7 +27,7 @@ A necessary and sufficient condition to prove a graph G is planar is to see if t
 ## Faces
 A planar representation of a graph divides the plane into a number of connected regions called **faces**
 
-![](planar-graphs-20230928-1.png)
+![](../../Attachments/planar-graphs-20230928-1.png)
 
 ##### Euler's theorem on planar graphs
 If a connected planar graph G has n vertices, e edges and r regions
@@ -37,4 +37,4 @@ $n-e+r=2$
 ## Isomorphism
 Two graphs are said to be isomorphic if there is a one-one correspondence between their vertices and edges.
 
-![](planar-graphs-20230928-2.png)
+![](../../Attachments/planar-graphs-20230928-2.png)
