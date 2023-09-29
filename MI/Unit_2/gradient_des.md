@@ -101,7 +101,7 @@ Weightage to recent epochs
 	- weights wont update
 	- if activation is small(if z is small) then![](../../Attachments/gradient_des-20230929-21.png) 
 	![](../../Attachments/gradient_des-20230929-20.png)
-		- relu in this case will explode
+	- relu in this case will explode
 	![](../../Attachments/gradient_des-20230929-12.png)
 	
 
