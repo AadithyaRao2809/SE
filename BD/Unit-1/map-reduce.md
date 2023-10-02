@@ -29,9 +29,29 @@
 - **Optimal Split Size** = HDFS block size (128 MB on v2)
 -![[../../Attachments/hdfs20231001_0.excalidraw.svg]]
 %%[[../../Attachments/hdfs20231001_0.excalidraw.md|🖋 Edit in Excalidraw]], and the [[../../Attachments/hdfs20231001_0.excalidraw.dark.svg|dark exported image]]%%
+
 During the shuffling stage, the partitioning function ensures all similar keys end up(stay together) at the some reducer
 
 The Default Hadoop partitioner in Hadoop MapReduce is Hash Partitioner which computes a hash value for the key and assigns the partition based on this result.
+
+**Map Phase:**
+- Input data divided into splits, processed in parallel by map tasks.
+- Map tasks produce intermediate key-value pairs.
+- Intermediate data stored locally or in memory.
+- No aggregation or sorting during the map phase.
+
+**Shuffle and Sort Phase:**
+- After mapping, Hadoop performs shuffle and sort.
+- Groups and sorts intermediate key-value pairs by keys.
+- Groups are written to separate local intermediate files.
+- Ensures same-key data goes to the same reducer.
+
+**Reduce Phase:**
+- Reducer tasks know which keys they reduce.
+- Reducers fetch corresponding intermediate files.
+- Data read one key at a time, iterating through associated values.
+- User-defined reduce function applied for reduction/aggregation.
+- Results typically written to an output file(in HDFS), finalizing the MapReduce job
 
 #### Hadoop 1.0 Job Management
 
