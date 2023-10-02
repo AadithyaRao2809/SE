@@ -4,9 +4,18 @@
 - **Origin**: Introduced by Google, presented in OSDI '04 (Operating System Design and Implementation).
 - **Execution**: Runs on a large set of commodity machines in a distributed manner.
 - **Resilience**: Includes checks for failures, ensuring high availability in the distributed computing environment.
+
+**Advantages**
+- Parallelly processing the data in a distributed computational environment and thus increases processing performance
+- Data Locality – ability to process data where it is, by moving processing to data location, rather than moving data which is more expensive
 ![[../../Attachments/hdfs20231001.excalidraw.svg]]
 %%[[../../Attachments/hdfs20231001.excalidraw.md|🖋 Edit in Excalidraw]], and the [[../../Attachments/hdfs20231001.excalidraw.dark.svg|dark exported image]]%%
 
+
+*Where is Map output written to?*
+-  Local disk and not HDFS 
+- Why? Temporary output to be discarded after reduce. 
+- Failure: If the node running the map task fails  before the output has been consumed by reducer, automatically rerun map task on another node
 #### MR Split Size Considerations
 
 - **Smaller Splits** ⇒ more parallelism
@@ -20,6 +29,9 @@
 - **Optimal Split Size** = HDFS block size (128 MB on v2)
 -![[../../Attachments/hdfs20231001_0.excalidraw.svg]]
 %%[[../../Attachments/hdfs20231001_0.excalidraw.md|🖋 Edit in Excalidraw]], and the [[../../Attachments/hdfs20231001_0.excalidraw.dark.svg|dark exported image]]%%
+During the shuffling stage, the partitioning function ensures all similar keys end up(stay together) at the some reducer
+
+The Default Hadoop partitioner in Hadoop MapReduce is Hash Partitioner which computes a hash value for the key and assigns the partition based on this result.
 
 #### Hadoop 1.0 Job Management
 
@@ -129,4 +141,24 @@
     - Unlike some other schedulers, the Capacity Scheduler does not utilize spare capacity even if it is available.
 - **Cluster Segmentation**:
     - In some cases, clusters may be broken up into smaller clusters, each managed separately by its own Capacity Scheduler instance.
+
+![](../../Attachments/map-reduce-20231002.png)
+
+#### Failures
+![[../../Attachments/map-reduce20231002.excalidraw.svg]]
+%%[[../../Attachments/map-reduce20231002.excalidraw.md|🖋 Edit in Excalidraw]], and the [[../../Attachments/map-reduce20231002.excalidraw.dark.svg|dark exported image]]%%
+
+**Zookeeper:** manages cluster (coordination b/w machines,distributed locking , heartbeats)
+**Resource Manager**:allocates resources
+
+##### Benefits of YARN
+
+- **Scalability**: YARN is capable of managing very large clusters, making it scalable to handle extensive computational needs.
+- **Flexibility**: YARN is flexible and supports a wide range of applications, not limited to Hadoop. It can efficiently manage resources for various data processing frameworks like Hadoop, Storm, and Spark within the same cluster.
+
+![](../../Attachments/map-reduce-20231002-1.png)
+Monitor M1, and M2. If M2 is not processing fast enough, M2' is created
+If *M2' does better*, **M2 is killed**
+If *M2 does better*, **M2' is killed**
+
    
