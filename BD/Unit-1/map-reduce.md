@@ -163,6 +163,7 @@ The Default Hadoop partitioner in Hadoop MapReduce is Hash Partitioner which com
     - In some cases, clusters may be broken up into smaller clusters, each managed separately by its own Capacity Scheduler instance.
 
 ![](../../Attachments/map-reduce-20231002.png)
+![](../../Attachments/map-reduce-20231002-2.png)
 
 #### Failures
 ![[../../Attachments/map-reduce20231002.excalidraw.svg]]
