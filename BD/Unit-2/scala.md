@@ -28,6 +28,13 @@
 - Spark can run independently or with Hadoop.
 - Spark can create distributed datasets from HDFS files.
 
+#### RDD
+**Resilient Distributed Datasets**
+- RDDs are a distributed collection of data that can be processed in parallel across a cluster of machines.
+- They are **resilient** because they automatically recover from node failures, ensuring fault tolerance.
+- RDDs are **distributed** as they can span multiple nodes in a cluster.
+- RDDs support two types of operations: **transformations** (which create new RDDs from existing ones) and **actions** (which return values to the driver program or write data to external storage).
+- RDDs are typically created from data in Hadoop Distributed File System (HDFS) or by transforming existing RDDs through operations like map, filter, and reduce.
 ### Apache Spark and Scala
 
 - **Spark** is an open-source distributed general-purpose cluster-computing framework.

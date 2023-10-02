@@ -28,7 +28,7 @@ Which method does less I/O for:
 - Inspired by Dynamo DB, a highly available and scalable NoSQL database.
 
 **Hbase / Cassandra**
-- Both Hbase and Cassandra utilize the same data model inspired by Google's Bigtable. This model allows for flexible storage of data in tables with rows and columns, making them suitable for handling large-scale, distributed data storage and retrieval.
+- Both Hbase and Cassandra utilize the same data model inspired by *Google's Bigtable*. This model allows for flexible storage of data in tables with rows and columns, making them suitable for handling large-scale, distributed data storage and retrieval.
 
 
 ![](../../Attachments/columnar-dbs-20230928-2.png)
@@ -37,17 +37,17 @@ Which method does less I/O for:
 
 **Hbase Schema: Several Tables**
 - In Hbase, data organization revolves around multiple tables.
-- Each table is composed of a set of column families.
-- Unlike traditional relational databases, Hbase allows flexibility in terms of column addition or modification without the need to alter the entire schema. This dynamic aspect is particularly valuable for managing evolving data requirements.
+- Each table is composed of a *set of column families*.
+- Unlike traditional relational databases, Hbase allows *flexibility in terms of column addition* or *modification without the need to alter the entire schema*. This dynamic aspect is particularly valuable for managing evolving data requirements.
 
 **Columns Not Part of Schema**
-- Unlike traditional relational databases where all columns must be defined in the schema beforehand, Hbase allows columns to be created on-the-fly without predefining them in the schema.
-- This flexibility means that you can insert data with new column names without altering the table schema in advance.
+- Unlike traditional relational databases where all columns must be defined in the schema beforehand, Hbase allows *columns to be created on-the-fly without predefining them in the schema.*
+- This flexibility means that you can *insert data with new column names without altering the table schema in advance.*
 
 **Hbase: Dynamic Columns**
-- Hbase's dynamic columns feature allows you to add columns to a table dynamically without altering the underlying schema.
-- In Hbase, column names are encoded inside the cells themselves. This means that the structure of the data can evolve over time as new columns are introduced.
-- This dynamic approach simplifies handling semi-structured or rapidly changing data, which is common in big data and NoSQL scenarios.
+- Hbase's *dynamic columns feature* allows you to *add columns to a table dynamically without altering the underlying schema.*
+- In Hbase, *column names are encoded inside the cells themselves.* This means that the *structure* of the data can *evolve over time* as new columns are introduced.
+- This dynamic approach simplifies handling *semi-structured or rapidly changing data*, which is common in big data and NoSQL scenarios.
 
 ![](../../Attachments/columnar-dbs-20230928-3.png)
 
@@ -58,6 +58,9 @@ Data partioned and spread across cluster
 ![](../../Attachments/columnar-dbs-20230928-4.png)
 
 ![](../../Attachments/columnar-dbs-20230928-5.png)
+
+![](../../Attachments/Untitled.jpg)
+
 ![](../../Attachments/columnar-dbs-20230928-6.png)
 **Hbase Architecture Components**
 
@@ -66,7 +69,7 @@ Data partioned and spread across cluster
 - _Manages_ the Hbase cluster.
 - _Assigns regions_ to Region Servers on startup, recovery, and load balancing to achieve _balanced data distribution_.
 - _Detects failures_ and issues within the cluster through coordination with _Apache ZooKeeper_, a distributed coordination service. It takes corrective actions when a Region Server fails or becomes unreachable, such as _reassigning regions_ to healthy servers.
-- _Zookeeper_ listens to region servers and _Active Hmaster_ for heartbeat. If the active one doesn't send a heartbeat, the _inactive one_ that is listening takes over.
+- _Zookeeper_ listens to *region servers* and _Active Hmaster_ for heartbeat. If the active one doesn't send a heartbeat, the _inactive one_ that is listening takes over.
 - _Monitors Region Servers' performance_ and conducts load balancing, _redistributing regions_ to optimize resource utilization and maintain even data distribution.
 - Supports administrative functions, including _schema changes_, _table creation_, and _column family management_. Its role is akin to the _HDFS NameNode_, responsible for managing metadata and data organization in Hadoop's distributed file system.
 
@@ -94,7 +97,46 @@ A _Region Server_ maintains various regions running on top of _[HDFS](https://ww
     
 - **MemStore:** It is the _write cache_. It stores all the incoming data before committing it to the disk or permanent memory. There is one _MemStore_ for each column family in a region. As you can see in the image, there are multiple _MemStores_ for a region because each region contains multiple column families. The data is sorted in lexicographical order before committing it to the disk.
     
-- **HFile:** From the above figure, you can see _HFile_ is stored on _HDFS_. Thus, it stores the actual cells on the disk. _MemStore_ commits the data to _HFile_ when the size of _MemStore_ exceeds
+- **HFile:** From the above figure, you can see _HFile_ is stored on _HDFS_. Thus, it stores the actual cells on the disk. _MemStore_ commits the data to _HFile_ when the size of _MemStore_ exceeds.HBase cells are stored in HDFS files on the disks of the region server. Each HDFS file contains a *single column family* for a *single region*. The cells in the file are sorted by row key.
+
+	- The HDFS file is a sequence of blocks, where each block contains a number of cells. The blocks are also sorted by row key.
+
+	- Within each block, the cells are stored in a compressed format. The default compression format is SNAPPY, but other compression formats can be used.
+	
+```HBase table: users
+Column family: user
+Region: 0-100
+
+HDFS file: users_user_0-100.hfile
+
+Block 1:
+Row key: 1
+Column qualifier: name
+Value: John Doe
+
+Row key: 2
+Column qualifier: name
+Value: Jane Doe
+
+Row key: 3
+Column qualifier: name
+Value: Peter Parker
+
+Block 2:
+Row key: 101
+Column qualifier: name
+Value: Mary Jane Watson
+
+Row key: 102
+Column qualifier: name
+Value: Harry Osborn
+
+Row key: 103
+Column qualifier: name
+Value: Gwen Stacy
+
+and timestamps too
+```
 
 
 **Steps to Write**:
@@ -141,19 +183,19 @@ Cells have row_id,column,timestamp/version
 #### Cassandra
 
 
-- **Origin**: Cassandra _originates_ from Bigtable and Amazon's DynamoDB.
+- **Origin**: Cassandra _originates_ from *Bigtable* and *Amazon's DynamoDB.*
     
 - **Open Source**: Cassandra is an _open-source_, _columnar NoSQL database_, similar to Hbase.
     
 - **P2P (Peer-to-Peer)**: Cassandra follows a _peer-to-peer architecture_ rather than a master-slave architecture, where all nodes in the cluster have equal roles and responsibilities. _Each node can handle reads/writes._
     
-- **Elastic Scalability**: Cassandra supports _elastic scalability_, allowing the cluster to easily increase the number of nodes. This scalability feature enables Cassandra to handle growing data and traffic loads.
+- **Elastic Scalability**: Cassandra supports _elastic scalability_, allowing the cluster to *easily increase the number of nodes.* This scalability feature enables Cassandra to handle growing data and traffic loads.
     
 - **Replication for Failure Prevention**: Cassandra ensures data availability and fault tolerance by _replicating data_ across multiple nodes. In case of node failures, data can be retrieved from replicas, preventing data loss.
     
-- **Dynamically Accommodates Changes**: Cassandra can _dynamically accommodate changes_ to the cluster, such as adding or removing nodes, with minimal disruption to operations.
+- **Dynamically Accommodates Changes**: Cassandra can _dynamically accommodate changes_ to the cluster, such as adding or removing nodes, with *minimal disruption to operations.*
     
-- **Data Organization**: Data in Cassandra is organized into _partitions_. Each partition contains a set of rows, and these partitions are distributed across the cluster.
+- **Data Organization**: Data in Cassandra is organized into _partitions_. Each partition contains a *set of rows*, and these partitions are *distributed across the cluster.*(To nodes)
     
 - **Partition**: A _partition_ in Cassandra is a fundamental unit of data distribution and storage. It contains rows of data and is identified by a unique _partition key_.
     
@@ -168,6 +210,6 @@ Cells have row_id,column,timestamp/version
 | Request Coordination    | Over partitioned dataset                | Through master                        |
 | Node Organization      | Nodes organized as rings                | Organized as regions, handled by region server |
 | Failure Handling       | Handled by nodes                        | Failure handled by ZooKeeper, membership handled by master server |
-| Storage Engine         | Local storage engine, independent of HBASE or HDFS | Built on top of HDFS                 |
+| Storage Engine         | Local storage engine(any type of hardware like vm,cloud servers,bare-metal servers), independent of HBASE or HDFS | Built on top of HDFS                 |
 | Query Language         | CQL (Cassandra Query Language), richer than Hbase query language | Hbase query language isn't as rich  |
 

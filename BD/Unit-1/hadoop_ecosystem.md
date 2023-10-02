@@ -5,6 +5,7 @@
 • Flume-Tool to capture weblog data
 • OOZIE-Workflow Manager
 • HBASE-Distributed Columnar database
+![](../../Attachments/hadoop_ecosystem-20231002.png)
 
 
 ### Oozie
@@ -31,6 +32,7 @@ It is an open Source Java Tomcat Web-Application
 - It **receives requests from a client**, **triggers workflow actions** by using **Hadoop execution engine** to actually execute the task. It provides a **unique callback HTTP URL** to the task which then **notifies that URL** when it is complete.
 - Oozie can also detect completion of tasks by **polling** the task for completion and then returns the result to the client.
 - Oozie leverages the **existing Hadoop machinery** for **load balancing**, **fail-over**, etc
+- Submits tasks to **yarn**
 
 
 
@@ -85,7 +87,9 @@ But as mapreduce is lower level ,it has a greater efficiency
 
 ![](../../Attachments/hadoop_ecosystem-20230928-3.png)
 ![](../../Attachments/hadoop_ecosystem-20230928-4.png)
-pl scripts converted to map reduce internally
+*pl scripts converted to map reduce internally*
+![](../../Attachments/hadoop_ecosystem-20231002-1.png)
+
 ![](../../Attachments/hadoop_ecosystem-20230928-5.png)
 ![](../../Attachments/hadoop_ecosystem-20230928-6.png)
 ```
@@ -103,23 +107,26 @@ store topMatches into /data/topMatches;
 
 **SQL -to -Hadoop (Apache)**
 
-- Supports bulk import and export of data into and out of HDFS
+- Supports bulk import and export of data(from structured) into and out of HDFS
 - From structured DBS like RDBMS, NOSQL,DATA WAREHOUSES etc (defines schema for import)
 - Data migration tool based on connector architecture
-- Advantage of migrating to HDFS : streaming data access so we can handle data as it comes, and then batch export to DB
+- Advantage of migrating to HDFS : streaming data access so we can handle data as it comes, and then batch export to DB(other tools like kafka that can do real time streaming)
 - Integrates with Oozie as an action
--  Supports plugins for  data sources(new external systems)
+-  Supports plugins(users can develop) for data sources(new external systems)
+- Sqoop Connectors, Sqoop can overcome the differences in SQL dialects supported by various databases along with providing optimized data transfer. To be more specific connector is a pluggable piece. That we use to fetch metadata about transferred data (columns, associated data types, …). Also to drive the data transfer itself in the most efficient manner.
 ![](../../Attachments/hadoop_ecosystem-20230928-7.png)
 
 ##### Import
 ![](../../Attachments/hadoop_ecosystem-20230928-8.png)
 
 ![](../../Attachments/hadoop_ecosystem-20230928-9.png)
+**Split-by Column:** Sqoop typically splits the data based on a specified column in the source database. This column is known as the "split-by" column. The split-by column is often a primary key or another column with a high degree of data distribution. Sqoop uses the values in this column to determine how to divide the data into chunks.
 
 ##### Export
 ![](../../Attachments/hadoop_ecosystem-20230928-10.png)
 
 ![](../../Attachments/hadoop_ecosystem-20230928-11.png)
+
 
 
 #### Flume
@@ -145,11 +152,12 @@ Its based on streaming data flows for **collecting large amounts of streaming da
 
 ![](../../Attachments/hadoop_ecosystem-20230928-13.png)
 ![](../../Attachments/hadoop_ecosystem-20230928-14.png)
+**Integration with Other Tools:** It can be integrated with other tools in the Hadoop ecosystem, such as Apache Ranger for fine-grained security control and Apache Knox for perimeter security.
 
 1) Ambari Stacks
-	- collection of Hadoop services and components that have been tested and certified to work together. Stacks include Hadoop services such as HDFS, YARN, Hive, and Spark.
+	- collection of **Hadoop services and components** that have been **tested** and **certified to work together**. Stacks include Hadoop services such as **HDFS, YARN, Hive, and Spark**.
 2)  Ambari Blueprints
-	- Ambari Blueprints are a way to automate the provisioning and configuration of Hadoop clusters using Ambari. They are essentially templates or specifications that describe how a cluster should be set up. Blueprints include information about the services, components, host assignments, and configurations needed for a cluster.
+	- Ambari Blueprints are a way to **automate** the **provisioning and configuration** of Hadoop clusters using Ambari. They are essentially templates or specifications that describe **how a cluster should be set up**. Blueprints include information about the services, components, host assignments, and configurations needed for a cluster.
 	- Cluster definition files ( 2 JSON files) , one generic template and one that sets specific properties to launch the deployment process
 	
 In summary, Ambari Stacks define the abstract structure and configuration options for Hadoop services and components, while Ambari Blueprints use this stack information to automate the actual deployment and configuration of Hadoop clusters
@@ -168,8 +176,8 @@ Hive is **similar to SQL** and thus provides an easier and simpler way for **que
 It supports various languages on client side.
 
 key components:  
-1. **Data Storage**: Hive works with data stored in Hadoop Distributed File System (HDFS) or other storage systems compatible with Hadoop, such as Apache Parquet, Apache ORC, or plain text files.  
-2. **Metastore**: Hive uses a metastore to store metadata about tables, schemas, columns, and data types. This metadata helps Hive translate SQL-like queries into low-level MapReduce or Tez jobs that can process the data efficiently. The metastore can be backed by a traditional relational database system like MySQL, PostgreSQL, or an embedded Derby database.  
+1. **Data Storage**: Hive works with structured data stored in Hadoop Distributed File System (HDFS) or other storage systems compatible with Hadoop, such as Apache Parquet, Apache ORC, or plain text files.  
+2. **Metastore**: Hive uses a metastore to store metadata about tables, schemas, columns, and data types. This **metadata helps Hive translate SQL-like queries into low-level MapReduce or Tez jobs** that can process the data efficiently. The metastore can be backed by a traditional relational database system like MySQL, PostgreSQL, or an embedded Derby database.  
 3. **Hive Query Language (HQL)**: Hive provides a SQL-like language called Hive Query Language (HQL) that allows users to write queries and manipulate data stored in Hadoop. HQL abstracts the complexity of writing MapReduce or Tez jobs directly, making it easier for analysts and data scientists who are familiar with SQL to work with big data. Supports joins, aggregate etc and various data types(structs lists and maps)
 4. **Hive CLI and Interfaces**: Users can interact with Hive in multiple ways, including:
 	- **Hive CLI**: A command-line interface for running Hive queries.    
@@ -179,11 +187,30 @@ key components:
 6. **Optimizations**: Hive includes several optimizations to improve query performance. These include query optimization, predicate pushdown, partition pruning, and more. These optimizations help Hive generate efficient query plans that can be executed on the Hadoop cluster.  
 7. **Integration**: Hive can be integrated with other components of the Hadoop ecosystem, such as HBase, Spark, Pig, and others. This allows users to leverage different tools and frameworks for specific tasks within a big data pipeline.
 
+HIVE Client(various languages) -> HIVE server -> Driver -> HIVE QL Engine ( Parser-> Compiler(gives plan in dag form,communicates with metastore)-> Optimizer -> Execution engine )->MapReduce -> SerDe(hive to app and vice versa,)
+
+**SerDe**
+- It takes the structured data from Hive tables (typically rows and columns) and converts it into a serialized format, such as JSON, Avro, or any custom format specified by the SerDe implementation.
+- It takes the serialized data from external sources and converts it back into Hive's internal data representation
+
+
+
  In summary, Hive is a data warehousing and querying tool for Hadoop that provides a SQL-like interface for working with large datasets. It translates high-level SQL-like queries into low-level MapReduce, Tez, or Spark jobs to process data efficiently in a distributed Hadoop environment. Hive is widely used in the big data ecosystem for tasks like data analysis, reporting, and data transformation.
 
 ![](../../Attachments/hadoop_ecosystem-20230928-16.png)
 
-![](../../Attachments/hadoop_ecosystem-20230928-17.png)
+![](../../Attachments/hadoop_ecosystem-20231002-2.png)
 ![](../../Attachments/hadoop_ecosystem-20230928-18.png)
 ![](../../Attachments/hadoop_ecosystem-20230928-19.png)
- 
+
+- Row 1 with `student_id = 123` would be assigned to `bucket 123 % 4 = 3`.
+- Row 2 with `student_id = 456` would be assigned to `bucket 456 % 4 = 0`.
+- Row 3 with `student_id = 789` would be assigned to `bucket 789 % 4 = 1`.
+
+ - Use **Hive** when you have structured data and want to leverage SQL-like queries for data analysis and reporting.
+    
+- Use **Pig** when you need more flexibility and control over data processing, especially for ETL and data transformation tasks, and when dealing with unstructured or semi-structured data.
+    
+- For complex data processing tasks that require custom logic and transformations, Pig may be a better choice.
+    
+- Some organizations use both Hive and Pig in conjunction, where Hive is used for data warehousing and reporting, while Pig is used for data preparation and transformation before loading it into Hive tables.
