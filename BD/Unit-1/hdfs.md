@@ -44,16 +44,19 @@ redundancy data stored on 3 machines (so that if one fails, one can make a copy 
 - Used in Hadoop 3
  ![](../../Attachments/hdfs-20230928-4.png)
 - half the storage compared to Replication
+
+![](../../Attachments/hdfs-20231002.png)
 #### **Namenode**
 - Namenode *manages directories* and the file system namespace.
 - It *regulates access rights* for open, close, and rename operations on files.
 - Namenode maintains the *mapping of blocks to data nodes* in the cluster.
 - It handles *block failures* and maintains information in the *transaction log*.
 - *Metadata* is *stored in memory* for efficient file system operations.
+- Manages and maintains Datanodes (receives heartbeat)
 ##### HDFS Namenode Components
 
 - **Namenode** manages Hadoop HDFS metadata.
-- Two critical components: **Edit Log** and **FsImage**.
+- Two critical components: **Edit Log** and **FsImage** stored on **local disk**
 
 ###### Edit Log
 - Also known as **transaction log**.
@@ -75,6 +78,8 @@ redundancy data stored on 3 machines (so that if one fails, one can make a copy 
 - **Edit Log captures real-time transactions**, while **FsImage serves as a checkpoint** for recovery.
 
 CPU's got faster but memory didn't as much so increase block size 
+*Hadoop v1* default *64 MB*
+*Hadoop v2* default *128 MB*
 
 ![](../../Attachments/hdfs-20230928-6.png)
 
@@ -88,3 +93,5 @@ CPU's got faster but memory didn't as much so increase block size
 - If **problem is in the network** and ANN is fine , but it has told SNN that it is now active, **two NN'S will be updating the HD** at the same time
 -  Solution : enforce that only one NN can write to HD
 - Fencing : currently active NN **virtually fences the HD** from the **other NN** by **blocking the network** (*STONITH -shoot the other node in the head*)
+![](../../Attachments/hdfs-20231001.png)
+
