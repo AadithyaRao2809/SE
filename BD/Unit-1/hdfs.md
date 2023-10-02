@@ -45,7 +45,8 @@ redundancy data stored on 3 machines (so that if one fails, one can make a copy 
  ![](../../Attachments/hdfs-20230928-4.png)
 - half the storage compared to Replication
 
-![](../../Attachments/hdfs-20231002.png)
+![[../../Attachments/hdfs20231002.excalidraw.svg]]
+%%[[../../Attachments/hdfs20231002.excalidraw.md|🖋 Edit in Excalidraw]], and the [[../../Attachments/hdfs20231002.excalidraw.dark.svg|dark exported image]]%%
 #### **Namenode**
 - Namenode *manages directories* and the file system namespace.
 - It *regulates access rights* for open, close, and rename operations on files.
@@ -81,13 +82,9 @@ CPU's got faster but memory didn't as much so increase block size
 *Hadoop v1* default *64 MB*
 *Hadoop v2* default *128 MB*
 
-![](../../Attachments/hdfs-20230928-6.png)
 
-![](../../Attachments/hdfs-20230928-2.png)
-
-
-![](../../Attachments/hdfs-20230928-5.png)
-
+![[../../Attachments/hdfs20231002_0.excalidraw.svg]]
+%%[[../../Attachments/hdfs20231002_0.excalidraw.md|🖋 Edit in Excalidraw]], and the [[../../Attachments/hdfs20231002_0.excalidraw.dark.svg|dark exported image]]%%
 - Heartbeat not received can be due to problem at **source** or **problem in network**
 - Zookeeper cannot determine where the problem is
 - If **problem is in the network** and ANN is fine , but it has told SNN that it is now active, **two NN'S will be updating the HD** at the same time
