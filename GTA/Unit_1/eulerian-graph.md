@@ -43,6 +43,5 @@ Removing bridge disconnects the graph.
 - Repeat until all edges traversed.
 
 
-![](../../Attachments/Pasted%20image%2020230928114113.png)
 
 [Hamiltonian Graph](hamiltonian-graph.md)
