@@ -24,21 +24,22 @@
 - **Spark** uses **Resilient Distributed Datasets (RDDs)** for processing.
 - Hadoop has **HDFS** for distributed file storage.
 - HDFS is scalable; servers/machines can be added for more data.
-- Spark doesn't have its own file system; it relies on Hadoop's HDFS.
+- Spark **doesn't have its own file system; it relies on Hadoop's HDFS**.
 - Spark can run independently or with Hadoop.
 - Spark can create distributed datasets from HDFS files.
+- Spark can handle **streaming data** and is **faster**
 
 #### RDD
 **Resilient Distributed Datasets**
 - RDDs are a distributed collection of data that can be processed in parallel across a cluster of machines.
 - They are **resilient** because they automatically recover from node failures, ensuring fault tolerance.
 - RDDs are **distributed** as they can span multiple nodes in a cluster.
-- RDDs support two types of operations: **transformations** (which create new RDDs from existing ones) and **actions** (which return values to the driver program or write data to external storage).
+- RDDs support two types of operations: **transformations** (which create new RDDs from existing ones) and **actions** (which return **values to the driver program** or **write data to external storage**).
 - RDDs are typically created from data in Hadoop Distributed File System (HDFS) or by transforming existing RDDs through operations like map, filter, and reduce.
 ### Apache Spark and Scala
 
-- **Spark** is an open-source distributed general-purpose cluster-computing framework.
-- **Scala** is a general-purpose programming language.
+- **Spark** is an open-source **distributed general-purpose cluster-computing framework**.
+- **Scala** is a **general-purpose programming language.**
 - Spark enhances Hadoop's computational processes.
 - Scala supports functional programming and has a strong static type system.
 - Scala can be used for web apps, streaming data, distributed apps, and parallel processing.
@@ -50,7 +51,7 @@
 - **Scalable Language**.
 - **Object-oriented**, compiled into Java bytecode (runs on JVM).
 - Can reference Java libraries.
-- Blends Object-Oriented (OO) and Functional Programming (FP).
+- Blends **Object-Oriented (OO)** and **Functional Programming (FP).**
 - Strongly, statically typed.
 
 **What's wrong with Java?**:
@@ -98,7 +99,7 @@ def squareOf(x: Int) : x * x // def method that cannot be reassigned
 **Scala:**
 - Every value in Scala is an object; even primitives are turned into objects by the compiler for efficiency.
 - ![](../../Attachments/scala-20231002-9.png)
-- In Scala, operators are treated as methods, and you can use either operator or method syntax for operations.
+- In Scala, operators are treated as methods, and you can use **either operator or method syntax for operations.**
 
 
 3. **Concurrency**:
@@ -125,7 +126,7 @@ def squareOf(x: Int) : x * x // def method that cannot be reassigned
 	    - Accesses the Java API for concurrency.
 	    - Provides Actors for coarse-grained parallelism.
 	        - Actors use message passing with `send !` abstraction.
-	        - Useful for simplifying parallel programming in Scala, especially for map-reduce-like tasks.
+	        - Useful for simplifying parallel programming in Scala, especially for **map-reduce-like tasks.**
 
 
 4. **Functional Programming**:
@@ -141,8 +142,8 @@ def squareOf(x: Int) : x * x // def method that cannot be reassigned
 	
 	- **Data Flow Capture**:
 		- Programs in Scala implicitly capture data flow.
-		- Operations like `map`, `filter`, and `reduce` on collections. When you apply these operations to a collection, you're defining a sequence of transformations to be applied to the data. These transformations describe the data flow, and Scala takes care of executing them in the proper order.
-		- Scala allows you to compose functions easily. You can chain multiple functions together to form a data transformation pipeline, capturing the flow of data from one step to the next.
+		- Operations like `map`, `filter`, and `reduce` on collections. When you apply these operations to a collection, you're defining a **sequence of transformations** to be applied to the data. These transformations describe the data flow, and Scala takes care of executing them in the proper order.
+		- Scala allows you to **compose functions easily.** You can chain multiple functions together to form a **data transformation pipeline**, capturing the flow of data from one step to the next.
 	
 	- **Order of Operations Unimportant**:
 		- The order of operations is not crucial, enhancing flexibility.
@@ -158,9 +159,11 @@ def squareOf(x: Int) : x * x // def method that cannot be reassigned
 %%[[../../Attachments/scala20231002_0.excalidraw.md|🖋 Edit in Excalidraw]], and the [[../../Attachments/scala20231002_0.excalidraw.dark.svg|dark exported image]]%%
 
 
-	![[../../Attachments/scala20231002_1.excalidraw.svg]]
-	%%[[../../Attachments/scala20231002_1.excalidraw.md|🖋 Edit in Excalidraw]], and the [[../../Attachments/scala20231002_1.excalidraw.dark.svg|dark exported image]]%%
+![[../../Attachments/scala20231002_1.excalidraw.svg]]
+%%[[../../Attachments/scala20231002_1.excalidraw.md|🖋 Edit in Excalidraw]], and the [[../../Attachments/scala20231002_1.excalidraw.dark.svg|dark exported image]]%%
 
+![[../../Attachments/scala20231002_2.excalidraw.svg]]
+%%[[../../Attachments/scala20231002_2.excalidraw.md|🖋 Edit in Excalidraw]], and the [[../../Attachments/scala20231002_2.excalidraw.dark.svg|dark exported image]]%%
 5. **Lazy evaluation and operator overloading**
 ```
 val geeks = List(1, 2, 3, 4, 5)
