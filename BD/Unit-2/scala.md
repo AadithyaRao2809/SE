@@ -155,8 +155,11 @@ def squareOf(x: Int) : x * x // def method that cannot be reassigned
 	- **Concurrency and Locks**:
 		- Scala's features (due to functional programming) reduce the need to worry about concurrency and acquiring locks, making concurrent programming more manageable.
 
-	![[../../Attachments/scala20231002_0.excalidraw.svg]]
-%%[[../../Attachments/scala20231002_0.excalidraw.md|🖋 Edit in Excalidraw]], and the [[../../Attachments/scala20231002_0.excalidraw.dark.svg|dark exported image]]%%
+
+![[../../Attachments/scala20231003.excalidraw.svg]]
+%%[[../../Attachments/scala20231003.excalidraw.md|🖋 Edit in Excalidraw]], and the [[../../Attachments/scala20231003.excalidraw.dark.svg|dark exported image]]%%
+
+
 
 
 ![[../../Attachments/scala20231002_1.excalidraw.svg]]
