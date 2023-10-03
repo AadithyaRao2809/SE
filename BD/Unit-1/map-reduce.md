@@ -73,11 +73,12 @@ The Default Hadoop partitioner in Hadoop MapReduce is Hash Partitioner which com
 **Issues**
 1. **Scalability Limitation**:
     - Limited to 4000 nodes per cluster, hindering its ability to handle large datasets.
-2. **Availability Single Point of Failure**:
+    - As there is one Job Tracker
+1. **Availability Single Point of Failure**:
     - The Job Tracker served as a single point of failure, causing potential downtime.
-3. **Resource Utilization Problems**:
+2. **Resource Utilization Problems**:
     - Inefficient resource allocation impacted cluster performance.
-4. **Limited to MapReduce Applications**:
+3. **Limited to MapReduce Applications**:
     - Hadoop 1.0 primarily supported MapReduce, limiting its versatility for different workloads.
 
 #### YARN (Yet Another Resource Negotiator)

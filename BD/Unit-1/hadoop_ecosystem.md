@@ -113,7 +113,8 @@ store topMatches into /data/topMatches;
 - Advantage of migrating to HDFS : streaming data access so we can handle data as it comes, and then batch export to DB(other tools like kafka that can do real time streaming)
 - Integrates with Oozie as an action
 -  Supports plugins(users can develop) for data sources(new external systems)
-- Sqoop Connectors, Sqoop can overcome the differences in SQL dialects supported by various databases along with providing optimized data transfer. To be more specific connector is a pluggable piece. That we use to fetch metadata about transferred data (columns, associated data types, …). Also to drive the data transfer itself in the most efficient manner.
+- Sqoop Connectors, Sqoop can overcome the differences in SQL dialects supported by various databases along with providing optimized data transfer. To be more specific connector is a pluggable piece. That we use to fetch metadata about transferred data (columns, associated data types, …). Also to drive the data transfer itself in the most efficient manner. Eg.**MySQL connector**,**PostgreSQL connector**
+
 ![](../../Attachments/hadoop_ecosystem-20230928-7.png)
 
 ##### Import
