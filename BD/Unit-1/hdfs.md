@@ -49,7 +49,7 @@ redundancy data stored on 3 machines (so that if one fails, one can make a copy 
 %%[[../../Attachments/hdfs20231002.excalidraw.md|🖋 Edit in Excalidraw]], and the [[../../Attachments/hdfs20231002.excalidraw.dark.svg|dark exported image]]%%
 #### **Namenode**
 - Namenode *manages directories* and the file system namespace.
-- It *regulates access rights* for open, close, and rename operations on files.
+- It *regulates access rights* for *open, close, and rename* operations on files.
 - Namenode maintains the *mapping of blocks to data nodes* in the cluster.
 - It handles *block failures* and maintains information in the *transaction log*.
 - *Metadata* is *stored in memory* for efficient file system operations.
