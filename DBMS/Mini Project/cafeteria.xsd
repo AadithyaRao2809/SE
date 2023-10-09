@@ -1,0 +1,70 @@
+<erd>
+  <entities>
+    <entity name="Student">
+      <attributes>
+        <attribute name="email" type="string"/>
+        <attribute name="srn" type="string"/>
+        <attribute name="name" type="complex">
+          <attributes>
+            <attribute name="firstname" type="string"/>
+            <attribute name="lastname" type="string"/>
+          </attributes>
+        </attribute>
+        <attribute name="dob" type="date"/>
+      </attributes>
+    </entity>
+    <entity name="Vendor">
+      <attributes>
+        <attribute name="name" type="complex">
+          <attributes>
+            <attribute name="firstname" type="string"/>
+            <attribute name="lastname" type="string"/>
+          </attributes>
+        </attribute>
+        <attribute name="id" type="string"/>
+        <attribute name="email" type="string"/>
+        <attribute name="phone_no" type="string"/>
+      </attributes>
+    </entity>
+    <entity name="Shop">
+      <attributes>
+        <attribute name="status" type="string"/>
+        <attribute name="name" type="string"/>
+        <attribute name="location" type="string"/>
+        <attribute name="id" type="string"/>
+      </attributes>
+    </entity>
+    <entity name="FoodItem">
+      <attributes>
+        <attribute name="name" type="string"/>
+        <attribute name="id" type="string"/>
+        <attribute name="description" type="string"/>
+        <attribute name="price" type="decimal"/>
+      </attributes>
+    </entity>
+  </entities>
+  <relationships>
+    <relationship name="place" type="one-to-many">
+      <source-entity name="Student"/>
+      <target-entity name="Order"/>
+      <cardinality maxOccurs="unbounded" on-target-entity="true"/>
+    </relationship>
+    <relationship name="owns" type="one-to-many">
+      <source-entity name="Vendor"/>
+      <target-entity name="Shop"/>
+      <cardinality maxOccurs="unbounded" on-source-entity="true" on-target-entity="true"/>
+    </relationship>
+    <relationship name="menu" type="many-to-many">
+      <source-entity name="Shop"/>
+      <target-entity name="FoodItem"/>
+      <cardinality maxOccurs="unbounded" on-source-entity="true"/>
+    </relationship>
+    <relationship name="contains" type="many-to-many">
+      <source-entity name="Order"/>
+      <target-entity name="FoodItem"/>
+      <cardinality maxOccurs="unbounded" on-target-entity="true"/>
+    </relationship>
+  </relationships>
+</erd>
+
+
