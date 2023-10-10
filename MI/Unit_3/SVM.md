@@ -35,12 +35,8 @@ Square this dosage now
 
 
 ### Hard Margin
-![](../../Attachments/SVM-20231009-5.png)
-![](../../Attachments/SVM-20231009-6.png)
-![](../../Attachments/SVM-20231009-7.png)
-![](../../Attachments/SVM-20231009-8.png)
-If we didnt take 1 here it would just be 2 x that factor
-We need to maximize this maintaining the constraint
+![[../../Attachments/SVM20231010_0.excalidraw.svg]]
+%%[[../../Attachments/SVM20231010_0.excalidraw.md|🖋 Edit in Excalidraw]], and the [[../../Attachments/SVM20231010_0.excalidraw.dark.svg|dark exported image]]%%
 
 
 ### Soft Margin
